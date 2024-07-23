@@ -1,0 +1,33 @@
+syntax = "proto3";
+package monitor.proto;
+
+
+message MemInfo
+{
+    float total = 1;            //总内存的大小 除去预留空间
+    float free = 2;             //完全没用到空闲内存大小
+    float avail = 3;            //可用内存大小 在不使用交换空间的情况下，启动一个新的应用最大可用内存的大小
+    float buffer = 4;           //块设备所占用的缓存页，包括：直接读写块设备以及文件系统元数据(metadata)，比如superblock使用的缓存页。
+    float cached = 5;           //普通文件所占的缓存页
+    float swap_cached =6;       //swap cache中包含的是被确定要swapping换页
+    float active = 7;           //包含active(anon) active(file)
+    float inactive = 8;         //包含inactive anon和inactive file
+    float active_anon = 9;      //活跃匿名页
+    float inactive_anon = 10;   //非活跃匿名页
+    float active_file = 11;     //活跃文件内存页
+    float inactive_file = 12;   //非活跃的内存页
+    // float unevictable = 13;     //因为种种原因无法回收(page-out)或者交换到swap(swap-out)的内存页
+    // float mlocked = 14;         //被系统调用"mlock()"锁定到内存中的页面。Mlocked页面是不可收回的。
+    // float swaptotal = 15;       //
+    // float swapfree = 16;
+    // float zswap = 17;
+    // float zsapped = 18;
+    float dirty = 19;           //需要写入磁盘的内存页的大小
+    float writeback = 20;       //正在被写回的内存页的大小
+    float anon_pages = 21;      //未映射的页大小
+    float mapped = 22;          //设备和文件等映射的大小
+    float KReclaimable = 23;    
+    float sReclaimable = 24;    //可回收的slab的大小 slab是linux内核的一种内存分配器
+    float sUnreclaim = 25;      //不可回收的slab的大小
+    float used_percent =26;     //用户使用率
+}

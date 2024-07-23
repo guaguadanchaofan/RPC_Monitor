@@ -1,0 +1,18 @@
+syntax = "proto3";
+package monitor.proto;
+
+
+message CpuSoftirqs
+{
+    string cpu = 1; 
+    float hi = 2;         //高优先级的tasklet
+    float timer = 3;      //用于定时器的下半部分
+    float net_tx = 4;     //用于网络层发数据包
+    float net_rx = 5;     //用于网络层收数据包
+    float block = 6;      
+    float irq_poll =7;
+    float tasklet = 8;    //低优先级tasklet
+    float sched = 9;
+    float hrtimer = 10;
+    float rcu = 11;
+}

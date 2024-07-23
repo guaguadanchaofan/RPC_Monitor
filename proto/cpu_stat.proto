@@ -1,0 +1,16 @@
+syntax = "proto3";
+package monitor.proto;
+
+//获取 cpu使用相关事件再将空闲时间/总时间得到使用率
+message CpuStat
+{
+    string cpu_name = 1; 
+    float cpu_precent = 2;      //cpu总使用率
+    float user_precent = 3;     //用户使用率
+    float system_precent = 5;   //系统使用率
+    float nice_precent = 6;     //低优先级用户使用率
+    float idle_precent = 7;     //空闲使用率  不包括IO的时间 （IOwait）
+    float iowait_precent = 8;   //iowait使用率
+    float irq_precent = 9;      //硬中断的使用率
+    float softirp_precent = 10; //软中断使用率
+}

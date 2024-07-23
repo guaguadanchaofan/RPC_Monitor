@@ -1,0 +1,12 @@
+syntax = "proto3";
+package monitor.proto;
+
+
+message NetInfo
+{
+    string name = 1;    
+    float send_rate = 2;                //发送速率
+    float recv_rate = 3;                //接收速率
+    float send_packets_rate = 4;        
+    float recv_packets_rate = 5;
+}
