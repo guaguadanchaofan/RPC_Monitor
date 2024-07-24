@@ -1,0 +1,24 @@
+
+# 查找 protobuf
+find_package(Protobuf REQUIRED)
+include_directories(${Protobuf_INCLUDE_DIRS})
+
+# 生成 proto 文件
+protobuf_generate_cpp(PROTO_SRCS PROTO_HDRS ${CMAKE_SOURCE_DIR}/proto/example_service.proto)
+
+# 添加库
+add_library(mprpc STATIC
+    src/mprpcapplication.cpp
+    src/mprpcchannel.cpp
+    src/rpcprovider.cpp
+    # 其他框架源文件
+)
+
+# 链接库
+target_link_libraries(mprpc ${Protobuf_LIBRARIES})
+
+# 设置库文件输出路径
+set_target_properties(mprpc PROPERTIES
+    ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib
+    LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib
+)
