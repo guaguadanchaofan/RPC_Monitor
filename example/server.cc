@@ -11,6 +11,7 @@ namespace monitor
                             ::google::protobuf::Closure *done)
         {
             _monitorinfo.Clear();
+            request->cpu_load().
             _monitorinfo = *request;
             std::cout << "jinru" << request->soft_irq_size() << std::endl;
         }
