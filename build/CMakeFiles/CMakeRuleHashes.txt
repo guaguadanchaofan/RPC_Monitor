@@ -1,7 +1,0 @@
-# Hashes of file build rules.
-dfe4642a02cea277cb9c20ecb0724b0b proto/cpu_load.pb.h
-701bf5c55e5886051fe7edbadfac64f6 proto/cpu_softirq.pb.h
-dabdc6951723da374518e7a7ea14da20 proto/cpu_stat.pb.h
-afd69174398bc4d7c7446ce1ec98b5dc proto/mem_info.pb.h
-ce8aadfa95032cfd60d9ec9ee6d7c082 proto/monitor_info.pb.h
-74a1bba9f1a282be7bc527e762a4e60d proto/net_info.pb.h

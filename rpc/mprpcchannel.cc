@@ -51,12 +51,12 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
 
     // 打印调试信息
     std::cout << "=====================================" << std::endl;
-    std::cout << "header_size: " << header_size << std::endl;
-    std::cout << "rpc_header_str: " << rpc_header_str << std::endl;
+    //std::cout << "header_size: " << header_size << std::endl;
+    //std::cout << "rpc_header_str: " << rpc_header_str << std::endl;
     std::cout << "service_name: " << service_name << std::endl;
     std::cout << "method_name: " << method_name << std::endl;
-    std::cout << "args_size: " << args_size << std::endl;
-    std::cout << "args_str: " << args_str << std::endl;
+    //std::cout << "args_size: " << args_size << std::endl;
+    //std::cout << "args_str: " << args_str << std::endl;
     std::cout << "=====================================" << std::endl;
 
 
@@ -102,7 +102,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     }
 
     // 接受rpc请求的响应值
-    char recv_buf[1024] = {0};
+    char recv_buf[10240] = {0};
     int recv_size = 0;
     if (-1 == (recv_size = recv(cfd, &recv_buf, sizeof(recv_buf), 0)))
     {

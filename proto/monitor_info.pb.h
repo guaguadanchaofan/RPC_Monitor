@@ -33,7 +33,6 @@
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
 #include <google/protobuf/service.h>
 #include <google/protobuf/unknown_field_set.h>
-#include <google/protobuf/empty.pb.h>
 #include "cpu_load.pb.h"
 #include "cpu_softirq.pb.h"
 #include "cpu_stat.pb.h"
@@ -54,7 +53,7 @@ struct TableStruct_monitor_5finfo_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[1]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[2]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -63,12 +62,16 @@ struct TableStruct_monitor_5finfo_2eproto {
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_monitor_5finfo_2eproto;
 namespace monitor {
 namespace proto {
+class Code;
+class CodeDefaultTypeInternal;
+extern CodeDefaultTypeInternal _Code_default_instance_;
 class MonitorInfo;
 class MonitorInfoDefaultTypeInternal;
 extern MonitorInfoDefaultTypeInternal _MonitorInfo_default_instance_;
 }  // namespace proto
 }  // namespace monitor
 PROTOBUF_NAMESPACE_OPEN
+template<> ::monitor::proto::Code* Arena::CreateMaybeMessage<::monitor::proto::Code>(Arena*);
 template<> ::monitor::proto::MonitorInfo* Arena::CreateMaybeMessage<::monitor::proto::MonitorInfo>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace monitor {
@@ -300,6 +303,134 @@ class MonitorInfo :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_monitor_5finfo_2eproto;
 };
+// -------------------------------------------------------------------
+
+class Code :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:monitor.proto.Code) */ {
+ public:
+  Code();
+  virtual ~Code();
+
+  Code(const Code& from);
+  Code(Code&& from) noexcept
+    : Code() {
+    *this = ::std::move(from);
+  }
+
+  inline Code& operator=(const Code& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline Code& operator=(Code&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const Code& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const Code* internal_default_instance() {
+    return reinterpret_cast<const Code*>(
+               &_Code_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    1;
+
+  friend void swap(Code& a, Code& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(Code* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline Code* New() const final {
+    return CreateMaybeMessage<Code>(nullptr);
+  }
+
+  Code* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<Code>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const Code& from);
+  void MergeFrom(const Code& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(Code* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "monitor.proto.Code";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_monitor_5finfo_2eproto);
+    return ::descriptor_table_monitor_5finfo_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCodeFieldNumber = 1,
+  };
+  // int32 code = 1;
+  void clear_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 code() const;
+  void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_code() const;
+  void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:monitor.proto.Code)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::int32 code_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_monitor_5finfo_2eproto;
+};
 // ===================================================================
 
 class RpcManager_Stub;
@@ -317,10 +448,10 @@ class RpcManager : public ::PROTOBUF_NAMESPACE_ID::Service {
 
   virtual void SetMonitorInfo(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
                        const ::monitor::proto::MonitorInfo* request,
-                       PROTOBUF_NAMESPACE_ID::Empty* response,
+                       ::monitor::proto::Code* response,
                        ::google::protobuf::Closure* done);
   virtual void GetMonitorInfo(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                       const PROTOBUF_NAMESPACE_ID::Empty* request,
+                       const ::monitor::proto::Code* request,
                        ::monitor::proto::MonitorInfo* response,
                        ::google::protobuf::Closure* done);
 
@@ -354,10 +485,10 @@ class RpcManager_Stub : public RpcManager {
 
   void SetMonitorInfo(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
                        const ::monitor::proto::MonitorInfo* request,
-                       PROTOBUF_NAMESPACE_ID::Empty* response,
+                       ::monitor::proto::Code* response,
                        ::google::protobuf::Closure* done);
   void GetMonitorInfo(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                       const PROTOBUF_NAMESPACE_ID::Empty* request,
+                       const ::monitor::proto::Code* request,
                        ::monitor::proto::MonitorInfo* response,
                        ::google::protobuf::Closure* done);
  private:
@@ -672,9 +803,35 @@ inline void MonitorInfo::set_allocated_net_info(::monitor::proto::NetInfo* net_i
   // @@protoc_insertion_point(field_set_allocated:monitor.proto.MonitorInfo.net_info)
 }
 
+// -------------------------------------------------------------------
+
+// Code
+
+// int32 code = 1;
+inline void Code::clear_code() {
+  code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 Code::_internal_code() const {
+  return code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 Code::code() const {
+  // @@protoc_insertion_point(field_get:monitor.proto.Code.code)
+  return _internal_code();
+}
+inline void Code::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  code_ = value;
+}
+inline void Code::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_code(value);
+  // @@protoc_insertion_point(field_set:monitor.proto.Code.code)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 
 // @@protoc_insertion_point(namespace_scope)
 

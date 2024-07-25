@@ -1,7 +1,7 @@
 proto/CMakeFiles/proto_lib.dir/net_info.pb.cc.o: \
- /home/guagua/Desktop/LinuxMonitor/build/proto/net_info.pb.cc \
+ /home/guagua/Desktop/LinuxMonitor/proto/net_info.pb.cc \
  /usr/include/stdc-predef.h \
- /home/guagua/Desktop/LinuxMonitor/build/proto/net_info.pb.h \
+ /home/guagua/Desktop/LinuxMonitor/proto/net_info.pb.h \
  /usr/include/c++/13/limits \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

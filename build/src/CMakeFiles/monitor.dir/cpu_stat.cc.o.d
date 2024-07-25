@@ -293,7 +293,6 @@ src/CMakeFiles/monitor.dir/cpu_stat.cc.o: \
  /usr/local/include/google/protobuf/message.h \
  /usr/local/include/google/protobuf/extension_set.h \
  /usr/include/c++/13/cassert /usr/local/include/google/protobuf/service.h \
- /usr/local/include/google/protobuf/empty.pb.h \
  /home/guagua/Desktop/LinuxMonitor/proto/cpu_load.pb.h \
  /home/guagua/Desktop/LinuxMonitor/proto/cpu_softirq.pb.h \
  /home/guagua/Desktop/LinuxMonitor/proto/cpu_stat.pb.h \

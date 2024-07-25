@@ -148,7 +148,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=mprpc
+CMAKE_PROJECT_NAME:STATIC=LinuxMonitor
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -215,6 +215,51 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Value Computed by CMake
+Example_BINARY_DIR:STATIC=/home/guagua/Desktop/LinuxMonitor/build/example
+
+//Value Computed by CMake
+Example_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Example_SOURCE_DIR:STATIC=/home/guagua/Desktop/LinuxMonitor/example
+
+//Value Computed by CMake
+LinuxMonitor_BINARY_DIR:STATIC=/home/guagua/Desktop/LinuxMonitor/build
+
+//Value Computed by CMake
+LinuxMonitor_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+LinuxMonitor_SOURCE_DIR:STATIC=/home/guagua/Desktop/LinuxMonitor
+
+//Value Computed by CMake
+MPRPC_BINARY_DIR:STATIC=/home/guagua/Desktop/LinuxMonitor/build/rpc
+
+//Value Computed by CMake
+MPRPC_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+MPRPC_SOURCE_DIR:STATIC=/home/guagua/Desktop/LinuxMonitor/rpc
+
+//Value Computed by CMake
+Monitor_BINARY_DIR:STATIC=/home/guagua/Desktop/LinuxMonitor/build/src
+
+//Value Computed by CMake
+Monitor_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Monitor_SOURCE_DIR:STATIC=/home/guagua/Desktop/LinuxMonitor/src
+
+//Value Computed by CMake
+ProtoLib_BINARY_DIR:STATIC=/home/guagua/Desktop/LinuxMonitor/build/proto
+
+//Value Computed by CMake
+ProtoLib_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ProtoLib_SOURCE_DIR:STATIC=/home/guagua/Desktop/LinuxMonitor/proto
+
 //Path to a file.
 Protobuf_INCLUDE_DIR:PATH=/usr/local/include
 
@@ -238,15 +283,6 @@ Protobuf_PROTOC_LIBRARY_DEBUG:FILEPATH=/usr/local/lib/libprotoc.so
 
 //Path to a library.
 Protobuf_PROTOC_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libprotoc.so
-
-//Value Computed by CMake
-mprpc_BINARY_DIR:STATIC=/home/guagua/Desktop/LinuxMonitor/build
-
-//Value Computed by CMake
-mprpc_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-mprpc_SOURCE_DIR:STATIC=/home/guagua/Desktop/LinuxMonitor
 
 
 ########################

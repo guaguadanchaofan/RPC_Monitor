@@ -117,25 +117,77 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-example/CMakeFiles/consumer.dir/rule:
-	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/consumer.dir/rule
-.PHONY : example/CMakeFiles/consumer.dir/rule
+example/CMakeFiles/online.dir/rule:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/online.dir/rule
+.PHONY : example/CMakeFiles/online.dir/rule
 
 # Convenience name for target.
-consumer: example/CMakeFiles/consumer.dir/rule
-.PHONY : consumer
+online: example/CMakeFiles/online.dir/rule
+.PHONY : online
 
 # fast build rule for target.
-consumer/fast:
-	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/consumer.dir/build.make example/CMakeFiles/consumer.dir/build
-.PHONY : consumer/fast
+online/fast:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/online.dir/build.make example/CMakeFiles/online.dir/build
+.PHONY : online/fast
+
+# Convenience name for target.
+example/CMakeFiles/server.dir/rule:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/server.dir/rule
+.PHONY : example/CMakeFiles/server.dir/rule
+
+# Convenience name for target.
+server: example/CMakeFiles/server.dir/rule
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/server.dir/build.make example/CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+# Convenience name for target.
+example/CMakeFiles/client.dir/rule:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/client.dir/rule
+.PHONY : example/CMakeFiles/client.dir/rule
+
+# Convenience name for target.
+client: example/CMakeFiles/client.dir/rule
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/client.dir/build.make example/CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+client.o: client.cc.o
+.PHONY : client.o
+
+# target to build an object file
+client.cc.o:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/client.dir/build.make example/CMakeFiles/client.dir/client.cc.o
+.PHONY : client.cc.o
+
+client.i: client.cc.i
+.PHONY : client.i
+
+# target to preprocess a source file
+client.cc.i:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/client.dir/build.make example/CMakeFiles/client.dir/client.cc.i
+.PHONY : client.cc.i
+
+client.s: client.cc.s
+.PHONY : client.s
+
+# target to generate assembly for a file
+client.cc.s:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/client.dir/build.make example/CMakeFiles/client.dir/client.cc.s
+.PHONY : client.cc.s
 
 online.o: online.cc.o
 .PHONY : online.o
 
 # target to build an object file
 online.cc.o:
-	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/consumer.dir/build.make example/CMakeFiles/consumer.dir/online.cc.o
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/online.dir/build.make example/CMakeFiles/online.dir/online.cc.o
 .PHONY : online.cc.o
 
 online.i: online.cc.i
@@ -143,7 +195,7 @@ online.i: online.cc.i
 
 # target to preprocess a source file
 online.cc.i:
-	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/consumer.dir/build.make example/CMakeFiles/consumer.dir/online.cc.i
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/online.dir/build.make example/CMakeFiles/online.dir/online.cc.i
 .PHONY : online.cc.i
 
 online.s: online.cc.s
@@ -151,8 +203,32 @@ online.s: online.cc.s
 
 # target to generate assembly for a file
 online.cc.s:
-	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/consumer.dir/build.make example/CMakeFiles/consumer.dir/online.cc.s
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/online.dir/build.make example/CMakeFiles/online.dir/online.cc.s
 .PHONY : online.cc.s
+
+server.o: server.cc.o
+.PHONY : server.o
+
+# target to build an object file
+server.cc.o:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/server.dir/build.make example/CMakeFiles/server.dir/server.cc.o
+.PHONY : server.cc.o
+
+server.i: server.cc.i
+.PHONY : server.i
+
+# target to preprocess a source file
+server.cc.i:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/server.dir/build.make example/CMakeFiles/server.dir/server.cc.i
+.PHONY : server.cc.i
+
+server.s: server.cc.s
+.PHONY : server.s
+
+# target to generate assembly for a file
+server.cc.s:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f example/CMakeFiles/server.dir/build.make example/CMakeFiles/server.dir/server.cc.s
+.PHONY : server.cc.s
 
 # Help Target
 help:
@@ -162,10 +238,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... consumer"
+	@echo "... client"
+	@echo "... online"
+	@echo "... server"
+	@echo "... client.o"
+	@echo "... client.i"
+	@echo "... client.s"
 	@echo "... online.o"
 	@echo "... online.i"
 	@echo "... online.s"
+	@echo "... server.o"
+	@echo "... server.i"
+	@echo "... server.s"
 .PHONY : help
 
 

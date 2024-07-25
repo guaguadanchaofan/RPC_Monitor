@@ -12,14 +12,16 @@ namespace monitor
     {
         void SetMonitorInfo(::google::protobuf::RpcController *controller,
                             const ::monitor::proto::MonitorInfo *request,
-                            google::protobuf::Empty *response,
+                            monitor::proto::Code *response,
                             ::google::protobuf::Closure *done)
         {
             _monitorinfo.Clear();
+            response->set_code(1);
             _monitorinfo = *request;
+            done->Run();
         }
         void GetMonitorInfo(::google::protobuf::RpcController *controller,
-                            const google::protobuf::Empty *request,
+                            const monitor::proto::Code *request,
                             ::monitor::proto::MonitorInfo *response,
                             ::google::protobuf::Closure *done)
         {

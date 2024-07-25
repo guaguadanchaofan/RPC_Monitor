@@ -4,7 +4,6 @@ package monitor.proto;
 option cc_generic_services = true;
 
 
-import "google/protobuf/empty.proto";
 import "cpu_load.proto";
 import "cpu_softirq.proto";
 import "cpu_stat.proto";
@@ -22,12 +21,17 @@ message MonitorInfo
     NetInfo net_info = 6;
 }
 
+message Code
+{
+    int32 code = 1;
+}
+  
 
 
 service RpcManager
 {
-    rpc SetMonitorInfo(MonitorInfo)returns(google.protobuf.Empty)
+    rpc SetMonitorInfo(MonitorInfo)returns(Code)
     {}
-    rpc GetMonitorInfo(google.protobuf.Empty)returns(MonitorInfo)
+    rpc GetMonitorInfo(Code)returns(MonitorInfo)
     {}
 }

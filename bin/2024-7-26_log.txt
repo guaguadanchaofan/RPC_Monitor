@@ -1,0 +1,40 @@
+[00:11:15][INFO]service_name : RpcManager
+[00:11:15][INFO]method_name : SetMonitorInfo
+[00:11:15][INFO]method_name : GetMonitorInfo
+[00:11:15][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[01:02:04][INFO]service_name : RpcManager
+[01:02:04][INFO]method_name : SetMonitorInfo
+[01:02:04][INFO]method_name : GetMonitorInfo
+[01:02:04][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[01:04:54][INFO]service_name : RpcManager
+[01:04:54][INFO]method_name : SetMonitorInfo
+[01:04:54][INFO]method_name : GetMonitorInfo
+[01:04:54][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[01:09:02][INFO]service_name : RpcManager
+[01:09:02][INFO]method_name : SetMonitorInfo
+[01:09:02][INFO]method_name : GetMonitorInfo
+[01:09:02][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[01:12:27][INFO]service_name : RpcManager
+[01:12:27][INFO]method_name : SetMonitorInfo
+[01:12:27][INFO]method_name : GetMonitorInfo
+[01:12:27][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[01:13:19][INFO]service_name : RpcManager
+[01:13:19][INFO]method_name : SetMonitorInfo
+[01:13:19][INFO]method_name : GetMonitorInfo
+[01:13:19][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[01:15:07][INFO]service_name : RpcManager
+[01:15:07][INFO]method_name : SetMonitorInfo
+[01:15:07][INFO]method_name : GetMonitorInfo
+[01:15:07][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[01:15:40][INFO]service_name : RpcManager
+[01:15:40][INFO]method_name : SetMonitorInfo
+[01:15:40][INFO]method_name : GetMonitorInfo
+[01:15:40][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[01:22:08][INFO]service_name : RpcManager
+[01:22:08][INFO]method_name : SetMonitorInfo
+[01:22:08][INFO]method_name : GetMonitorInfo
+[01:22:08][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[01:41:55][INFO]service_name : RpcManager
+[01:41:55][INFO]method_name : SetMonitorInfo
+[01:41:55][INFO]method_name : GetMonitorInfo
+[01:41:55][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 

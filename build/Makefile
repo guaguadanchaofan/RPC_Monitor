@@ -130,6 +130,19 @@ monitor/fast:
 .PHONY : monitor/fast
 
 #=============================================================================
+# Target rules for targets named proto_lib
+
+# Build rule for target.
+proto_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proto_lib
+.PHONY : proto_lib
+
+# fast build rule for target.
+proto_lib/fast:
+	$(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto_lib.dir/build.make proto/CMakeFiles/proto_lib.dir/build
+.PHONY : proto_lib/fast
+
+#=============================================================================
 # Target rules for targets named mprpc
 
 # Build rule for target.
@@ -143,30 +156,43 @@ mprpc/fast:
 .PHONY : mprpc/fast
 
 #=============================================================================
-# Target rules for targets named consumer
+# Target rules for targets named online
 
 # Build rule for target.
-consumer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 consumer
-.PHONY : consumer
+online: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 online
+.PHONY : online
 
 # fast build rule for target.
-consumer/fast:
-	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/consumer.dir/build.make example/CMakeFiles/consumer.dir/build
-.PHONY : consumer/fast
+online/fast:
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/online.dir/build.make example/CMakeFiles/online.dir/build
+.PHONY : online/fast
 
 #=============================================================================
-# Target rules for targets named proto_lib
+# Target rules for targets named server
 
 # Build rule for target.
-proto_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proto_lib
-.PHONY : proto_lib
+server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
+.PHONY : server
 
 # fast build rule for target.
-proto_lib/fast:
-	$(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto_lib.dir/build.make proto/CMakeFiles/proto_lib.dir/build
-.PHONY : proto_lib/fast
+server/fast:
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/server.dir/build.make example/CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+#=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/client.dir/build.make example/CMakeFiles/client.dir/build
+.PHONY : client/fast
 
 # Help Target
 help:
@@ -176,10 +202,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... consumer"
+	@echo "... client"
 	@echo "... monitor"
 	@echo "... mprpc"
+	@echo "... online"
 	@echo "... proto_lib"
+	@echo "... server"
 .PHONY : help
 
 

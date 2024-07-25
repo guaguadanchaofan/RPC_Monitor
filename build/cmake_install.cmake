@@ -49,17 +49,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/guagua/Desktop/LinuxMonitor/build/proto/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/guagua/Desktop/LinuxMonitor/build/rpc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("/home/guagua/Desktop/LinuxMonitor/build/example/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/guagua/Desktop/LinuxMonitor/build/proto/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

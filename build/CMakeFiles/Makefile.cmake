@@ -54,15 +54,17 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "proto/CMakeFiles/CMakeDirectoryInformation.cmake"
   "rpc/CMakeFiles/CMakeDirectoryInformation.cmake"
   "example/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "proto/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/monitor.dir/DependInfo.cmake"
-  "rpc/CMakeFiles/mprpc.dir/DependInfo.cmake"
-  "example/CMakeFiles/consumer.dir/DependInfo.cmake"
   "proto/CMakeFiles/proto_lib.dir/DependInfo.cmake"
+  "rpc/CMakeFiles/mprpc.dir/DependInfo.cmake"
+  "example/CMakeFiles/online.dir/DependInfo.cmake"
+  "example/CMakeFiles/server.dir/DependInfo.cmake"
+  "example/CMakeFiles/client.dir/DependInfo.cmake"
   )

@@ -13,18 +13,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o.d"
   "CMakeFiles/proto_lib.dir/net_info.pb.cc.o"
   "CMakeFiles/proto_lib.dir/net_info.pb.cc.o.d"
-  "cpu_load.pb.cc"
-  "cpu_load.pb.h"
-  "cpu_softirq.pb.cc"
-  "cpu_softirq.pb.h"
-  "cpu_stat.pb.cc"
-  "cpu_stat.pb.h"
-  "mem_info.pb.cc"
-  "mem_info.pb.h"
-  "monitor_info.pb.cc"
-  "monitor_info.pb.h"
-  "net_info.pb.cc"
-  "net_info.pb.h"
 )
 
 # Per-language clean rules from dependency scanning.

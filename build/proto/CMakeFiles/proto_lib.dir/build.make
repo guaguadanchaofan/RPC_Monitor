@@ -69,159 +69,111 @@ include proto/CMakeFiles/proto_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include proto/CMakeFiles/proto_lib.dir/flags.make
 
-proto/monitor_info.pb.h: /home/guagua/Desktop/LinuxMonitor/proto/monitor_info.proto
-proto/monitor_info.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running cpp protocol buffer compiler on monitor_info.proto"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/local/bin/protoc --cpp_out /home/guagua/Desktop/LinuxMonitor/build/proto -I /home/guagua/Desktop/LinuxMonitor/proto /home/guagua/Desktop/LinuxMonitor/proto/monitor_info.proto
-
-proto/monitor_info.pb.cc: proto/monitor_info.pb.h
-	@$(CMAKE_COMMAND) -E touch_nocreate proto/monitor_info.pb.cc
-
-proto/cpu_load.pb.h: /home/guagua/Desktop/LinuxMonitor/proto/cpu_load.proto
-proto/cpu_load.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Running cpp protocol buffer compiler on cpu_load.proto"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/local/bin/protoc --cpp_out /home/guagua/Desktop/LinuxMonitor/build/proto -I /home/guagua/Desktop/LinuxMonitor/proto /home/guagua/Desktop/LinuxMonitor/proto/cpu_load.proto
-
-proto/cpu_load.pb.cc: proto/cpu_load.pb.h
-	@$(CMAKE_COMMAND) -E touch_nocreate proto/cpu_load.pb.cc
-
-proto/cpu_softirq.pb.h: /home/guagua/Desktop/LinuxMonitor/proto/cpu_softirq.proto
-proto/cpu_softirq.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Running cpp protocol buffer compiler on cpu_softirq.proto"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/local/bin/protoc --cpp_out /home/guagua/Desktop/LinuxMonitor/build/proto -I /home/guagua/Desktop/LinuxMonitor/proto /home/guagua/Desktop/LinuxMonitor/proto/cpu_softirq.proto
-
-proto/cpu_softirq.pb.cc: proto/cpu_softirq.pb.h
-	@$(CMAKE_COMMAND) -E touch_nocreate proto/cpu_softirq.pb.cc
-
-proto/cpu_stat.pb.h: /home/guagua/Desktop/LinuxMonitor/proto/cpu_stat.proto
-proto/cpu_stat.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Running cpp protocol buffer compiler on cpu_stat.proto"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/local/bin/protoc --cpp_out /home/guagua/Desktop/LinuxMonitor/build/proto -I /home/guagua/Desktop/LinuxMonitor/proto /home/guagua/Desktop/LinuxMonitor/proto/cpu_stat.proto
-
-proto/cpu_stat.pb.cc: proto/cpu_stat.pb.h
-	@$(CMAKE_COMMAND) -E touch_nocreate proto/cpu_stat.pb.cc
-
-proto/mem_info.pb.h: /home/guagua/Desktop/LinuxMonitor/proto/mem_info.proto
-proto/mem_info.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Running cpp protocol buffer compiler on mem_info.proto"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/local/bin/protoc --cpp_out /home/guagua/Desktop/LinuxMonitor/build/proto -I /home/guagua/Desktop/LinuxMonitor/proto /home/guagua/Desktop/LinuxMonitor/proto/mem_info.proto
-
-proto/mem_info.pb.cc: proto/mem_info.pb.h
-	@$(CMAKE_COMMAND) -E touch_nocreate proto/mem_info.pb.cc
-
-proto/net_info.pb.h: /home/guagua/Desktop/LinuxMonitor/proto/net_info.proto
-proto/net_info.pb.h: /usr/local/bin/protoc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Running cpp protocol buffer compiler on net_info.proto"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/local/bin/protoc --cpp_out /home/guagua/Desktop/LinuxMonitor/build/proto -I /home/guagua/Desktop/LinuxMonitor/proto /home/guagua/Desktop/LinuxMonitor/proto/net_info.proto
-
-proto/net_info.pb.cc: proto/net_info.pb.h
-	@$(CMAKE_COMMAND) -E touch_nocreate proto/net_info.pb.cc
-
-proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o: proto/CMakeFiles/proto_lib.dir/flags.make
-proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o: proto/monitor_info.pb.cc
-proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o: proto/CMakeFiles/proto_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o -MF CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o.d -o CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o -c /home/guagua/Desktop/LinuxMonitor/build/proto/monitor_info.pb.cc
-
-proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proto_lib.dir/monitor_info.pb.cc.i"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/build/proto/monitor_info.pb.cc > CMakeFiles/proto_lib.dir/monitor_info.pb.cc.i
-
-proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proto_lib.dir/monitor_info.pb.cc.s"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/build/proto/monitor_info.pb.cc -o CMakeFiles/proto_lib.dir/monitor_info.pb.cc.s
-
 proto/CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o: proto/CMakeFiles/proto_lib.dir/flags.make
-proto/CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o: proto/cpu_load.pb.cc
+proto/CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o: /home/guagua/Desktop/LinuxMonitor/proto/cpu_load.pb.cc
 proto/CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o: proto/CMakeFiles/proto_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object proto/CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o -MF CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o.d -o CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o -c /home/guagua/Desktop/LinuxMonitor/build/proto/cpu_load.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object proto/CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o"
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o -MF CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o.d -o CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o -c /home/guagua/Desktop/LinuxMonitor/proto/cpu_load.pb.cc
 
 proto/CMakeFiles/proto_lib.dir/cpu_load.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proto_lib.dir/cpu_load.pb.cc.i"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/build/proto/cpu_load.pb.cc > CMakeFiles/proto_lib.dir/cpu_load.pb.cc.i
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/proto/cpu_load.pb.cc > CMakeFiles/proto_lib.dir/cpu_load.pb.cc.i
 
 proto/CMakeFiles/proto_lib.dir/cpu_load.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proto_lib.dir/cpu_load.pb.cc.s"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/build/proto/cpu_load.pb.cc -o CMakeFiles/proto_lib.dir/cpu_load.pb.cc.s
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/proto/cpu_load.pb.cc -o CMakeFiles/proto_lib.dir/cpu_load.pb.cc.s
 
 proto/CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o: proto/CMakeFiles/proto_lib.dir/flags.make
-proto/CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o: proto/cpu_softirq.pb.cc
+proto/CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o: /home/guagua/Desktop/LinuxMonitor/proto/cpu_softirq.pb.cc
 proto/CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o: proto/CMakeFiles/proto_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object proto/CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o -MF CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o.d -o CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o -c /home/guagua/Desktop/LinuxMonitor/build/proto/cpu_softirq.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object proto/CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o"
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o -MF CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o.d -o CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o -c /home/guagua/Desktop/LinuxMonitor/proto/cpu_softirq.pb.cc
 
 proto/CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.i"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/build/proto/cpu_softirq.pb.cc > CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.i
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/proto/cpu_softirq.pb.cc > CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.i
 
 proto/CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.s"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/build/proto/cpu_softirq.pb.cc -o CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.s
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/proto/cpu_softirq.pb.cc -o CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.s
 
 proto/CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o: proto/CMakeFiles/proto_lib.dir/flags.make
-proto/CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o: proto/cpu_stat.pb.cc
+proto/CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o: /home/guagua/Desktop/LinuxMonitor/proto/cpu_stat.pb.cc
 proto/CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o: proto/CMakeFiles/proto_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object proto/CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o -MF CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o.d -o CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o -c /home/guagua/Desktop/LinuxMonitor/build/proto/cpu_stat.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object proto/CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o"
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o -MF CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o.d -o CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o -c /home/guagua/Desktop/LinuxMonitor/proto/cpu_stat.pb.cc
 
 proto/CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.i"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/build/proto/cpu_stat.pb.cc > CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.i
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/proto/cpu_stat.pb.cc > CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.i
 
 proto/CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.s"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/build/proto/cpu_stat.pb.cc -o CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.s
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/proto/cpu_stat.pb.cc -o CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.s
 
 proto/CMakeFiles/proto_lib.dir/mem_info.pb.cc.o: proto/CMakeFiles/proto_lib.dir/flags.make
-proto/CMakeFiles/proto_lib.dir/mem_info.pb.cc.o: proto/mem_info.pb.cc
+proto/CMakeFiles/proto_lib.dir/mem_info.pb.cc.o: /home/guagua/Desktop/LinuxMonitor/proto/mem_info.pb.cc
 proto/CMakeFiles/proto_lib.dir/mem_info.pb.cc.o: proto/CMakeFiles/proto_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object proto/CMakeFiles/proto_lib.dir/mem_info.pb.cc.o"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto_lib.dir/mem_info.pb.cc.o -MF CMakeFiles/proto_lib.dir/mem_info.pb.cc.o.d -o CMakeFiles/proto_lib.dir/mem_info.pb.cc.o -c /home/guagua/Desktop/LinuxMonitor/build/proto/mem_info.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object proto/CMakeFiles/proto_lib.dir/mem_info.pb.cc.o"
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto_lib.dir/mem_info.pb.cc.o -MF CMakeFiles/proto_lib.dir/mem_info.pb.cc.o.d -o CMakeFiles/proto_lib.dir/mem_info.pb.cc.o -c /home/guagua/Desktop/LinuxMonitor/proto/mem_info.pb.cc
 
 proto/CMakeFiles/proto_lib.dir/mem_info.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proto_lib.dir/mem_info.pb.cc.i"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/build/proto/mem_info.pb.cc > CMakeFiles/proto_lib.dir/mem_info.pb.cc.i
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/proto/mem_info.pb.cc > CMakeFiles/proto_lib.dir/mem_info.pb.cc.i
 
 proto/CMakeFiles/proto_lib.dir/mem_info.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proto_lib.dir/mem_info.pb.cc.s"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/build/proto/mem_info.pb.cc -o CMakeFiles/proto_lib.dir/mem_info.pb.cc.s
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/proto/mem_info.pb.cc -o CMakeFiles/proto_lib.dir/mem_info.pb.cc.s
+
+proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o: proto/CMakeFiles/proto_lib.dir/flags.make
+proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o: /home/guagua/Desktop/LinuxMonitor/proto/monitor_info.pb.cc
+proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o: proto/CMakeFiles/proto_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o"
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o -MF CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o.d -o CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o -c /home/guagua/Desktop/LinuxMonitor/proto/monitor_info.pb.cc
+
+proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proto_lib.dir/monitor_info.pb.cc.i"
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/proto/monitor_info.pb.cc > CMakeFiles/proto_lib.dir/monitor_info.pb.cc.i
+
+proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proto_lib.dir/monitor_info.pb.cc.s"
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/proto/monitor_info.pb.cc -o CMakeFiles/proto_lib.dir/monitor_info.pb.cc.s
 
 proto/CMakeFiles/proto_lib.dir/net_info.pb.cc.o: proto/CMakeFiles/proto_lib.dir/flags.make
-proto/CMakeFiles/proto_lib.dir/net_info.pb.cc.o: proto/net_info.pb.cc
+proto/CMakeFiles/proto_lib.dir/net_info.pb.cc.o: /home/guagua/Desktop/LinuxMonitor/proto/net_info.pb.cc
 proto/CMakeFiles/proto_lib.dir/net_info.pb.cc.o: proto/CMakeFiles/proto_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object proto/CMakeFiles/proto_lib.dir/net_info.pb.cc.o"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto_lib.dir/net_info.pb.cc.o -MF CMakeFiles/proto_lib.dir/net_info.pb.cc.o.d -o CMakeFiles/proto_lib.dir/net_info.pb.cc.o -c /home/guagua/Desktop/LinuxMonitor/build/proto/net_info.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object proto/CMakeFiles/proto_lib.dir/net_info.pb.cc.o"
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT proto/CMakeFiles/proto_lib.dir/net_info.pb.cc.o -MF CMakeFiles/proto_lib.dir/net_info.pb.cc.o.d -o CMakeFiles/proto_lib.dir/net_info.pb.cc.o -c /home/guagua/Desktop/LinuxMonitor/proto/net_info.pb.cc
 
 proto/CMakeFiles/proto_lib.dir/net_info.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/proto_lib.dir/net_info.pb.cc.i"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/build/proto/net_info.pb.cc > CMakeFiles/proto_lib.dir/net_info.pb.cc.i
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/proto/net_info.pb.cc > CMakeFiles/proto_lib.dir/net_info.pb.cc.i
 
 proto/CMakeFiles/proto_lib.dir/net_info.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/proto_lib.dir/net_info.pb.cc.s"
-	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/build/proto/net_info.pb.cc -o CMakeFiles/proto_lib.dir/net_info.pb.cc.s
+	cd /home/guagua/Desktop/LinuxMonitor/build/proto && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/proto/net_info.pb.cc -o CMakeFiles/proto_lib.dir/net_info.pb.cc.s
 
 # Object files for target proto_lib
 proto_lib_OBJECTS = \
-"CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o" \
 "CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o" \
 "CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o" \
 "CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o" \
 "CMakeFiles/proto_lib.dir/mem_info.pb.cc.o" \
+"CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o" \
 "CMakeFiles/proto_lib.dir/net_info.pb.cc.o"
 
 # External object files for target proto_lib
 proto_lib_EXTERNAL_OBJECTS =
 
-/home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a: proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o
 /home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a: proto/CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o
 /home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a: proto/CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o
 /home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a: proto/CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o
 /home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a: proto/CMakeFiles/proto_lib.dir/mem_info.pb.cc.o
+/home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a: proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o
 /home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a: proto/CMakeFiles/proto_lib.dir/net_info.pb.cc.o
 /home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a: proto/CMakeFiles/proto_lib.dir/build.make
 /home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a: proto/CMakeFiles/proto_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library /home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library /home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a"
 	cd /home/guagua/Desktop/LinuxMonitor/build/proto && $(CMAKE_COMMAND) -P CMakeFiles/proto_lib.dir/cmake_clean_target.cmake
 	cd /home/guagua/Desktop/LinuxMonitor/build/proto && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proto_lib.dir/link.txt --verbose=$(VERBOSE)
 
@@ -233,18 +185,7 @@ proto/CMakeFiles/proto_lib.dir/clean:
 	cd /home/guagua/Desktop/LinuxMonitor/build/proto && $(CMAKE_COMMAND) -P CMakeFiles/proto_lib.dir/cmake_clean.cmake
 .PHONY : proto/CMakeFiles/proto_lib.dir/clean
 
-proto/CMakeFiles/proto_lib.dir/depend: proto/cpu_load.pb.cc
-proto/CMakeFiles/proto_lib.dir/depend: proto/cpu_load.pb.h
-proto/CMakeFiles/proto_lib.dir/depend: proto/cpu_softirq.pb.cc
-proto/CMakeFiles/proto_lib.dir/depend: proto/cpu_softirq.pb.h
-proto/CMakeFiles/proto_lib.dir/depend: proto/cpu_stat.pb.cc
-proto/CMakeFiles/proto_lib.dir/depend: proto/cpu_stat.pb.h
-proto/CMakeFiles/proto_lib.dir/depend: proto/mem_info.pb.cc
-proto/CMakeFiles/proto_lib.dir/depend: proto/mem_info.pb.h
-proto/CMakeFiles/proto_lib.dir/depend: proto/monitor_info.pb.cc
-proto/CMakeFiles/proto_lib.dir/depend: proto/monitor_info.pb.h
-proto/CMakeFiles/proto_lib.dir/depend: proto/net_info.pb.cc
-proto/CMakeFiles/proto_lib.dir/depend: proto/net_info.pb.h
+proto/CMakeFiles/proto_lib.dir/depend:
 	cd /home/guagua/Desktop/LinuxMonitor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guagua/Desktop/LinuxMonitor /home/guagua/Desktop/LinuxMonitor/proto /home/guagua/Desktop/LinuxMonitor/build /home/guagua/Desktop/LinuxMonitor/build/proto /home/guagua/Desktop/LinuxMonitor/build/proto/CMakeFiles/proto_lib.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : proto/CMakeFiles/proto_lib.dir/depend
 

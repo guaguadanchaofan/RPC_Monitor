@@ -1,2 +1,2 @@
-/usr/bin/ar qc /home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o CMakeFiles/proto_lib.dir/mem_info.pb.cc.o CMakeFiles/proto_lib.dir/net_info.pb.cc.o
+/usr/bin/ar qc /home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o CMakeFiles/proto_lib.dir/cpu_stat.pb.cc.o CMakeFiles/proto_lib.dir/mem_info.pb.cc.o CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o CMakeFiles/proto_lib.dir/net_info.pb.cc.o
 /usr/bin/ranlib /home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a

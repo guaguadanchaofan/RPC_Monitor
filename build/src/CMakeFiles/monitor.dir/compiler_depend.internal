@@ -321,7 +321,6 @@ src/CMakeFiles/monitor.dir/cpu_load.cc.o
  /usr/local/include/google/protobuf/arena_impl.h
  /usr/local/include/google/protobuf/arenastring.h
  /usr/local/include/google/protobuf/descriptor.h
- /usr/local/include/google/protobuf/empty.pb.h
  /usr/local/include/google/protobuf/extension_set.h
  /usr/local/include/google/protobuf/generated_enum_reflection.h
  /usr/local/include/google/protobuf/generated_enum_util.h
@@ -1046,7 +1045,6 @@ src/CMakeFiles/monitor.dir/cpu_softirq.cc.o
  /usr/local/include/google/protobuf/arena_impl.h
  /usr/local/include/google/protobuf/arenastring.h
  /usr/local/include/google/protobuf/descriptor.h
- /usr/local/include/google/protobuf/empty.pb.h
  /usr/local/include/google/protobuf/extension_set.h
  /usr/local/include/google/protobuf/generated_enum_reflection.h
  /usr/local/include/google/protobuf/generated_enum_util.h
@@ -1771,7 +1769,6 @@ src/CMakeFiles/monitor.dir/cpu_stat.cc.o
  /usr/local/include/google/protobuf/arena_impl.h
  /usr/local/include/google/protobuf/arenastring.h
  /usr/local/include/google/protobuf/descriptor.h
- /usr/local/include/google/protobuf/empty.pb.h
  /usr/local/include/google/protobuf/extension_set.h
  /usr/local/include/google/protobuf/generated_enum_reflection.h
  /usr/local/include/google/protobuf/generated_enum_util.h

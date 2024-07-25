@@ -1,7 +1,7 @@
 proto/CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o: \
- /home/guagua/Desktop/LinuxMonitor/build/proto/cpu_load.pb.cc \
+ /home/guagua/Desktop/LinuxMonitor/proto/cpu_load.pb.cc \
  /usr/include/stdc-predef.h \
- /home/guagua/Desktop/LinuxMonitor/build/proto/cpu_load.pb.h \
+ /home/guagua/Desktop/LinuxMonitor/proto/cpu_load.pb.h \
  /usr/include/c++/13/limits \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

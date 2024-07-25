@@ -1,7 +1,7 @@
 proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o: \
- /home/guagua/Desktop/LinuxMonitor/build/proto/monitor_info.pb.cc \
+ /home/guagua/Desktop/LinuxMonitor/proto/monitor_info.pb.cc \
  /usr/include/stdc-predef.h \
- /home/guagua/Desktop/LinuxMonitor/build/proto/monitor_info.pb.h \
+ /home/guagua/Desktop/LinuxMonitor/proto/monitor_info.pb.h \
  /usr/include/c++/13/limits \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -291,11 +291,10 @@ proto/CMakeFiles/proto_lib.dir/monitor_info.pb.cc.o: \
  /usr/local/include/google/protobuf/message.h \
  /usr/local/include/google/protobuf/extension_set.h \
  /usr/include/c++/13/cassert /usr/local/include/google/protobuf/service.h \
- /usr/local/include/google/protobuf/empty.pb.h \
- /home/guagua/Desktop/LinuxMonitor/build/proto/cpu_load.pb.h \
- /home/guagua/Desktop/LinuxMonitor/build/proto/cpu_softirq.pb.h \
- /home/guagua/Desktop/LinuxMonitor/build/proto/cpu_stat.pb.h \
- /home/guagua/Desktop/LinuxMonitor/build/proto/mem_info.pb.h \
- /home/guagua/Desktop/LinuxMonitor/build/proto/net_info.pb.h \
+ /home/guagua/Desktop/LinuxMonitor/proto/cpu_load.pb.h \
+ /home/guagua/Desktop/LinuxMonitor/proto/cpu_softirq.pb.h \
+ /home/guagua/Desktop/LinuxMonitor/proto/cpu_stat.pb.h \
+ /home/guagua/Desktop/LinuxMonitor/proto/mem_info.pb.h \
+ /home/guagua/Desktop/LinuxMonitor/proto/net_info.pb.h \
  /usr/local/include/google/protobuf/reflection_ops.h \
  /usr/local/include/google/protobuf/wire_format.h
