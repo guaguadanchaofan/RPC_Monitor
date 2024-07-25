@@ -1,6 +1,10 @@
 #include "mprpcapplication.h"
 #include "monitor_info.pb.h"
-
+#include "monitor.h"
+#include "cpu_load.h"
+#include <memory>
+#include <thread>
+#include <vector>
 namespace monitor
 {
     class RpcManagerInter : public monitor::proto::RpcManager
@@ -11,9 +15,7 @@ namespace monitor
                             ::google::protobuf::Closure *done)
         {
             _monitorinfo.Clear();
-            request->cpu_load().
             _monitorinfo = *request;
-            std::cout << "jinru" << request->soft_irq_size() << std::endl;
         }
         void GetMonitorInfo(::google::protobuf::RpcController *controller,
                             const google::protobuf::Empty *request,
@@ -21,13 +23,12 @@ namespace monitor
                             ::google::protobuf::Closure *done)
         {
             *response = _monitorinfo;
+            done->Run();
         }
-
     private:
         monitor::proto::MonitorInfo _monitorinfo;
     };
 }
-
 int main(int argc, char **argv)
 {
     MprpcApplication::Init(argc, argv);
