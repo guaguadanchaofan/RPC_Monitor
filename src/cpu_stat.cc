@@ -1,6 +1,6 @@
 #include "cpu_stat.h"
-#include "utils/read_file.h"
-#include "utils/utils.h"
+#include "read_file.h"
+#include "utils.h"
 
 namespace monitor
 {

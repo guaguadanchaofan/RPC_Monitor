@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/guagua/Desktop/LinuxMonitor/lib/libmonitor.a CMakeFiles/monitor.dir/cpu_load.cc.o CMakeFiles/monitor.dir/cpu_softirq.cc.o CMakeFiles/monitor.dir/cpu_stat.cc.o CMakeFiles/monitor.dir/read_file.cc.o
+/usr/bin/ranlib /home/guagua/Desktop/LinuxMonitor/lib/libmonitor.a

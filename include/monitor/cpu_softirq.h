@@ -5,8 +5,8 @@
 #include <unordered_map>
 #include <boost/chrono.hpp>
 #include "monitor_info.pb.h"
-#include "utils/read_file.h"
-#include "utils/utils.h"
+#include "read_file.h"
+#include "utils.h"
 namespace monitor
 {
     class CpuSoftIrqMonitor : public MonitorInter
