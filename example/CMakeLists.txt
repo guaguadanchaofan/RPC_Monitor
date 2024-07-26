@@ -19,6 +19,6 @@ add_executable(server ${SERVER_FILE})
 add_executable(client ${CILENT_FILE})
 
 # 链接库
-target_link_libraries(online monitor proto_lib mprpc)
-target_link_libraries(server monitor proto_lib mprpc)
-target_link_libraries(client monitor proto_lib mprpc)
+target_link_libraries(online monitor boost_system boost_chrono proto_lib mprpc)
+target_link_libraries(server monitor boost_system boost_chrono proto_lib mprpc)
+target_link_libraries(client monitor boost_system boost_chrono proto_lib mprpc)

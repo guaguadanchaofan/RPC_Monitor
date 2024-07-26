@@ -18,7 +18,7 @@ message MonitorInfo
     CpuLoad cpu_load = 3; 
     repeated CpuStat cpu_stat = 4;
     MemInfo mem_info = 5;
-    NetInfo net_info = 6;
+    repeated NetInfo net_info = 6;
 }
 
 message Code

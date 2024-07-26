@@ -71,6 +71,7 @@ namespace monitor
                 }
                 _cpu_stat[cpu_stat.cpu_name] = cpu_stat;
             }
+            cpu_stat_list.clear();
         }
         return;
     }

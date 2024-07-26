@@ -187,10 +187,10 @@ class MonitorInfo :
   enum : int {
     kSoftIrqFieldNumber = 2,
     kCpuStatFieldNumber = 4,
+    kNetInfoFieldNumber = 6,
     kNameFieldNumber = 1,
     kCpuLoadFieldNumber = 3,
     kMemInfoFieldNumber = 5,
-    kNetInfoFieldNumber = 6,
   };
   // repeated .monitor.proto.CpuSoftirqs soft_irq = 2;
   int soft_irq_size() const;
@@ -227,6 +227,24 @@ class MonitorInfo :
   ::monitor::proto::CpuStat* add_cpu_stat();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::monitor::proto::CpuStat >&
       cpu_stat() const;
+
+  // repeated .monitor.proto.NetInfo net_info = 6;
+  int net_info_size() const;
+  private:
+  int _internal_net_info_size() const;
+  public:
+  void clear_net_info();
+  ::monitor::proto::NetInfo* mutable_net_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::monitor::proto::NetInfo >*
+      mutable_net_info();
+  private:
+  const ::monitor::proto::NetInfo& _internal_net_info(int index) const;
+  ::monitor::proto::NetInfo* _internal_add_net_info();
+  public:
+  const ::monitor::proto::NetInfo& net_info(int index) const;
+  ::monitor::proto::NetInfo* add_net_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::monitor::proto::NetInfo >&
+      net_info() const;
 
   // string name = 1;
   void clear_name();
@@ -274,21 +292,6 @@ class MonitorInfo :
   ::monitor::proto::MemInfo* _internal_mutable_mem_info();
   public:
 
-  // .monitor.proto.NetInfo net_info = 6;
-  bool has_net_info() const;
-  private:
-  bool _internal_has_net_info() const;
-  public:
-  void clear_net_info();
-  const ::monitor::proto::NetInfo& net_info() const;
-  ::monitor::proto::NetInfo* release_net_info();
-  ::monitor::proto::NetInfo* mutable_net_info();
-  void set_allocated_net_info(::monitor::proto::NetInfo* net_info);
-  private:
-  const ::monitor::proto::NetInfo& _internal_net_info() const;
-  ::monitor::proto::NetInfo* _internal_mutable_net_info();
-  public:
-
   // @@protoc_insertion_point(class_scope:monitor.proto.MonitorInfo)
  private:
   class _Internal;
@@ -296,10 +299,10 @@ class MonitorInfo :
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::monitor::proto::CpuSoftirqs > soft_irq_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::monitor::proto::CpuStat > cpu_stat_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::monitor::proto::NetInfo > net_info_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
   ::monitor::proto::CpuLoad* cpu_load_;
   ::monitor::proto::MemInfo* mem_info_;
-  ::monitor::proto::NetInfo* net_info_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_monitor_5finfo_2eproto;
 };
@@ -749,58 +752,40 @@ inline void MonitorInfo::set_allocated_mem_info(::monitor::proto::MemInfo* mem_i
   // @@protoc_insertion_point(field_set_allocated:monitor.proto.MonitorInfo.mem_info)
 }
 
-// .monitor.proto.NetInfo net_info = 6;
-inline bool MonitorInfo::_internal_has_net_info() const {
-  return this != internal_default_instance() && net_info_ != nullptr;
+// repeated .monitor.proto.NetInfo net_info = 6;
+inline int MonitorInfo::_internal_net_info_size() const {
+  return net_info_.size();
 }
-inline bool MonitorInfo::has_net_info() const {
-  return _internal_has_net_info();
+inline int MonitorInfo::net_info_size() const {
+  return _internal_net_info_size();
 }
-inline const ::monitor::proto::NetInfo& MonitorInfo::_internal_net_info() const {
-  const ::monitor::proto::NetInfo* p = net_info_;
-  return p != nullptr ? *p : *reinterpret_cast<const ::monitor::proto::NetInfo*>(
-      &::monitor::proto::_NetInfo_default_instance_);
-}
-inline const ::monitor::proto::NetInfo& MonitorInfo::net_info() const {
-  // @@protoc_insertion_point(field_get:monitor.proto.MonitorInfo.net_info)
-  return _internal_net_info();
-}
-inline ::monitor::proto::NetInfo* MonitorInfo::release_net_info() {
-  // @@protoc_insertion_point(field_release:monitor.proto.MonitorInfo.net_info)
-  
-  ::monitor::proto::NetInfo* temp = net_info_;
-  net_info_ = nullptr;
-  return temp;
-}
-inline ::monitor::proto::NetInfo* MonitorInfo::_internal_mutable_net_info() {
-  
-  if (net_info_ == nullptr) {
-    auto* p = CreateMaybeMessage<::monitor::proto::NetInfo>(GetArenaNoVirtual());
-    net_info_ = p;
-  }
-  return net_info_;
-}
-inline ::monitor::proto::NetInfo* MonitorInfo::mutable_net_info() {
+inline ::monitor::proto::NetInfo* MonitorInfo::mutable_net_info(int index) {
   // @@protoc_insertion_point(field_mutable:monitor.proto.MonitorInfo.net_info)
-  return _internal_mutable_net_info();
+  return net_info_.Mutable(index);
 }
-inline void MonitorInfo::set_allocated_net_info(::monitor::proto::NetInfo* net_info) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
-  if (message_arena == nullptr) {
-    delete reinterpret_cast< ::PROTOBUF_NAMESPACE_ID::MessageLite*>(net_info_);
-  }
-  if (net_info) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
-    if (message_arena != submessage_arena) {
-      net_info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, net_info, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  net_info_ = net_info;
-  // @@protoc_insertion_point(field_set_allocated:monitor.proto.MonitorInfo.net_info)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::monitor::proto::NetInfo >*
+MonitorInfo::mutable_net_info() {
+  // @@protoc_insertion_point(field_mutable_list:monitor.proto.MonitorInfo.net_info)
+  return &net_info_;
+}
+inline const ::monitor::proto::NetInfo& MonitorInfo::_internal_net_info(int index) const {
+  return net_info_.Get(index);
+}
+inline const ::monitor::proto::NetInfo& MonitorInfo::net_info(int index) const {
+  // @@protoc_insertion_point(field_get:monitor.proto.MonitorInfo.net_info)
+  return _internal_net_info(index);
+}
+inline ::monitor::proto::NetInfo* MonitorInfo::_internal_add_net_info() {
+  return net_info_.Add();
+}
+inline ::monitor::proto::NetInfo* MonitorInfo::add_net_info() {
+  // @@protoc_insertion_point(field_add:monitor.proto.MonitorInfo.net_info)
+  return _internal_add_net_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::monitor::proto::NetInfo >&
+MonitorInfo::net_info() const {
+  // @@protoc_insertion_point(field_list:monitor.proto.MonitorInfo.net_info)
+  return net_info_;
 }
 
 // -------------------------------------------------------------------

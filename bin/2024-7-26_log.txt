@@ -38,3 +38,19 @@
 [01:41:55][INFO]method_name : SetMonitorInfo
 [01:41:55][INFO]method_name : GetMonitorInfo
 [01:41:55][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[15:50:20][INFO]service_name : RpcManager
+[15:50:20][INFO]method_name : SetMonitorInfo
+[15:50:20][INFO]method_name : GetMonitorInfo
+[15:50:20][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[16:32:33][INFO]service_name : RpcManager
+[16:32:33][INFO]method_name : SetMonitorInfo
+[16:32:33][INFO]method_name : GetMonitorInfo
+[16:32:33][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[16:33:55][INFO]service_name : RpcManager
+[16:33:55][INFO]method_name : SetMonitorInfo
+[16:33:55][INFO]method_name : GetMonitorInfo
+[16:33:55][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[17:05:46][INFO]service_name : RpcManager
+[17:05:46][INFO]method_name : SetMonitorInfo
+[17:05:46][INFO]method_name : GetMonitorInfo
+[17:05:46][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 

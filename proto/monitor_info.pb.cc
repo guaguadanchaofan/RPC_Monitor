@@ -106,7 +106,7 @@ const char descriptor_table_protodef_monitor_5finfo_2eproto[] PROTOBUF_SECTION_V
   "u_load\030\003 \001(\0132\026.monitor.proto.CpuLoad\022(\n\010"
   "cpu_stat\030\004 \003(\0132\026.monitor.proto.CpuStat\022("
   "\n\010mem_info\030\005 \001(\0132\026.monitor.proto.MemInfo"
-  "\022(\n\010net_info\030\006 \001(\0132\026.monitor.proto.NetIn"
+  "\022(\n\010net_info\030\006 \003(\0132\026.monitor.proto.NetIn"
   "fo\"\024\n\004Code\022\014\n\004code\030\001 \001(\0052\226\001\n\nRpcManager\022"
   "C\n\016SetMonitorInfo\022\032.monitor.proto.Monito"
   "rInfo\032\023.monitor.proto.Code\"\000\022C\n\016GetMonit"
@@ -145,14 +145,11 @@ void MonitorInfo::InitAsDefaultInstance() {
       ::monitor::proto::CpuLoad::internal_default_instance());
   ::monitor::proto::_MonitorInfo_default_instance_._instance.get_mutable()->mem_info_ = const_cast< ::monitor::proto::MemInfo*>(
       ::monitor::proto::MemInfo::internal_default_instance());
-  ::monitor::proto::_MonitorInfo_default_instance_._instance.get_mutable()->net_info_ = const_cast< ::monitor::proto::NetInfo*>(
-      ::monitor::proto::NetInfo::internal_default_instance());
 }
 class MonitorInfo::_Internal {
  public:
   static const ::monitor::proto::CpuLoad& cpu_load(const MonitorInfo* msg);
   static const ::monitor::proto::MemInfo& mem_info(const MonitorInfo* msg);
-  static const ::monitor::proto::NetInfo& net_info(const MonitorInfo* msg);
 };
 
 const ::monitor::proto::CpuLoad&
@@ -162,10 +159,6 @@ MonitorInfo::_Internal::cpu_load(const MonitorInfo* msg) {
 const ::monitor::proto::MemInfo&
 MonitorInfo::_Internal::mem_info(const MonitorInfo* msg) {
   return *msg->mem_info_;
-}
-const ::monitor::proto::NetInfo&
-MonitorInfo::_Internal::net_info(const MonitorInfo* msg) {
-  return *msg->net_info_;
 }
 void MonitorInfo::clear_soft_irq() {
   soft_irq_.Clear();
@@ -186,10 +179,7 @@ void MonitorInfo::clear_mem_info() {
   mem_info_ = nullptr;
 }
 void MonitorInfo::clear_net_info() {
-  if (GetArenaNoVirtual() == nullptr && net_info_ != nullptr) {
-    delete net_info_;
-  }
-  net_info_ = nullptr;
+  net_info_.Clear();
 }
 MonitorInfo::MonitorInfo()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
@@ -200,7 +190,8 @@ MonitorInfo::MonitorInfo(const MonitorInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       _internal_metadata_(nullptr),
       soft_irq_(from.soft_irq_),
-      cpu_stat_(from.cpu_stat_) {
+      cpu_stat_(from.cpu_stat_),
+      net_info_(from.net_info_) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from._internal_name().empty()) {
@@ -216,11 +207,6 @@ MonitorInfo::MonitorInfo(const MonitorInfo& from)
   } else {
     mem_info_ = nullptr;
   }
-  if (from._internal_has_net_info()) {
-    net_info_ = new ::monitor::proto::NetInfo(*from.net_info_);
-  } else {
-    net_info_ = nullptr;
-  }
   // @@protoc_insertion_point(copy_constructor:monitor.proto.MonitorInfo)
 }
 
@@ -228,8 +214,8 @@ void MonitorInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MonitorInfo_monitor_5finfo_2eproto.base);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(&cpu_load_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&net_info_) -
-      reinterpret_cast<char*>(&cpu_load_)) + sizeof(net_info_));
+      reinterpret_cast<char*>(&mem_info_) -
+      reinterpret_cast<char*>(&cpu_load_)) + sizeof(mem_info_));
 }
 
 MonitorInfo::~MonitorInfo() {
@@ -241,7 +227,6 @@ void MonitorInfo::SharedDtor() {
   name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete cpu_load_;
   if (this != internal_default_instance()) delete mem_info_;
-  if (this != internal_default_instance()) delete net_info_;
 }
 
 void MonitorInfo::SetCachedSize(int size) const {
@@ -261,6 +246,7 @@ void MonitorInfo::Clear() {
 
   soft_irq_.Clear();
   cpu_stat_.Clear();
+  net_info_.Clear();
   name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (GetArenaNoVirtual() == nullptr && cpu_load_ != nullptr) {
     delete cpu_load_;
@@ -270,10 +256,6 @@ void MonitorInfo::Clear() {
     delete mem_info_;
   }
   mem_info_ = nullptr;
-  if (GetArenaNoVirtual() == nullptr && net_info_ != nullptr) {
-    delete net_info_;
-  }
-  net_info_ = nullptr;
   _internal_metadata_.Clear();
 }
 
@@ -331,11 +313,16 @@ const char* MonitorInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .monitor.proto.NetInfo net_info = 6;
+      // repeated .monitor.proto.NetInfo net_info = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          ptr = ctx->ParseMessage(_internal_mutable_net_info(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_net_info(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<50>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -406,12 +393,12 @@ failure:
         5, _Internal::mem_info(this), target, stream);
   }
 
-  // .monitor.proto.NetInfo net_info = 6;
-  if (this->has_net_info()) {
+  // repeated .monitor.proto.NetInfo net_info = 6;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_net_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        6, _Internal::net_info(this), target, stream);
+      InternalWriteMessage(6, this->_internal_net_info(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -444,6 +431,13 @@ size_t MonitorInfo::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
+  // repeated .monitor.proto.NetInfo net_info = 6;
+  total_size += 1UL * this->_internal_net_info_size();
+  for (const auto& msg : this->net_info_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
   // string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
@@ -463,13 +457,6 @@ size_t MonitorInfo::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *mem_info_);
-  }
-
-  // .monitor.proto.NetInfo net_info = 6;
-  if (this->has_net_info()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *net_info_);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -505,6 +492,7 @@ void MonitorInfo::MergeFrom(const MonitorInfo& from) {
 
   soft_irq_.MergeFrom(from.soft_irq_);
   cpu_stat_.MergeFrom(from.cpu_stat_);
+  net_info_.MergeFrom(from.net_info_);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -514,9 +502,6 @@ void MonitorInfo::MergeFrom(const MonitorInfo& from) {
   }
   if (from.has_mem_info()) {
     _internal_mutable_mem_info()->::monitor::proto::MemInfo::MergeFrom(from._internal_mem_info());
-  }
-  if (from.has_net_info()) {
-    _internal_mutable_net_info()->::monitor::proto::NetInfo::MergeFrom(from._internal_net_info());
   }
 }
 
@@ -543,11 +528,11 @@ void MonitorInfo::InternalSwap(MonitorInfo* other) {
   _internal_metadata_.Swap(&other->_internal_metadata_);
   soft_irq_.InternalSwap(&other->soft_irq_);
   cpu_stat_.InternalSwap(&other->cpu_stat_);
+  net_info_.InternalSwap(&other->net_info_);
   name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
   swap(cpu_load_, other->cpu_load_);
   swap(mem_info_, other->mem_info_);
-  swap(net_info_, other->net_info_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MonitorInfo::GetMetadata() const {

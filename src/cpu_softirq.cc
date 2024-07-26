@@ -1,5 +1,5 @@
 #include "cpu_softirq.h"
-
+#include <boost/chrono.hpp>
 namespace monitor
 {
     void CpuSoftIrqMonitor::UpdataOnce(monitor::proto::MonitorInfo *monitor_info)
@@ -12,7 +12,7 @@ namespace monitor
             softirq.push_back(one_softirq);
             one_softirq.clear();
         }
-        for (int i = 0; i < softirq[0].size(); ++i)
+        for (int i = 0; i < 10; ++i)
         {
             std::string name = softirq[0][i];
             struct SoftIrq info;

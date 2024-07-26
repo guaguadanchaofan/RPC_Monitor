@@ -10,8 +10,11 @@ set(SOURCE_FILES
     cpu_softirq.cc
     cpu_stat.cc
     read_file.cc
+    mem_monitor.cc
+    net_monitor.cc
 )
 
 # 添加库
 add_library(monitor ${SOURCE_FILES})
+
 
