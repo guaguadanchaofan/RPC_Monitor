@@ -125,12 +125,42 @@ src/CMakeFiles/monitor.dir/read_file.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/monitor.dir/read_file.cc.s"
 	cd /home/guagua/Desktop/LinuxMonitor/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/src/read_file.cc -o CMakeFiles/monitor.dir/read_file.cc.s
 
+src/CMakeFiles/monitor.dir/mem_monitor.cc.o: src/CMakeFiles/monitor.dir/flags.make
+src/CMakeFiles/monitor.dir/mem_monitor.cc.o: /home/guagua/Desktop/LinuxMonitor/src/mem_monitor.cc
+src/CMakeFiles/monitor.dir/mem_monitor.cc.o: src/CMakeFiles/monitor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/monitor.dir/mem_monitor.cc.o"
+	cd /home/guagua/Desktop/LinuxMonitor/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/monitor.dir/mem_monitor.cc.o -MF CMakeFiles/monitor.dir/mem_monitor.cc.o.d -o CMakeFiles/monitor.dir/mem_monitor.cc.o -c /home/guagua/Desktop/LinuxMonitor/src/mem_monitor.cc
+
+src/CMakeFiles/monitor.dir/mem_monitor.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/monitor.dir/mem_monitor.cc.i"
+	cd /home/guagua/Desktop/LinuxMonitor/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/src/mem_monitor.cc > CMakeFiles/monitor.dir/mem_monitor.cc.i
+
+src/CMakeFiles/monitor.dir/mem_monitor.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/monitor.dir/mem_monitor.cc.s"
+	cd /home/guagua/Desktop/LinuxMonitor/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/src/mem_monitor.cc -o CMakeFiles/monitor.dir/mem_monitor.cc.s
+
+src/CMakeFiles/monitor.dir/net_monitor.cc.o: src/CMakeFiles/monitor.dir/flags.make
+src/CMakeFiles/monitor.dir/net_monitor.cc.o: /home/guagua/Desktop/LinuxMonitor/src/net_monitor.cc
+src/CMakeFiles/monitor.dir/net_monitor.cc.o: src/CMakeFiles/monitor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/monitor.dir/net_monitor.cc.o"
+	cd /home/guagua/Desktop/LinuxMonitor/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/monitor.dir/net_monitor.cc.o -MF CMakeFiles/monitor.dir/net_monitor.cc.o.d -o CMakeFiles/monitor.dir/net_monitor.cc.o -c /home/guagua/Desktop/LinuxMonitor/src/net_monitor.cc
+
+src/CMakeFiles/monitor.dir/net_monitor.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/monitor.dir/net_monitor.cc.i"
+	cd /home/guagua/Desktop/LinuxMonitor/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/src/net_monitor.cc > CMakeFiles/monitor.dir/net_monitor.cc.i
+
+src/CMakeFiles/monitor.dir/net_monitor.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/monitor.dir/net_monitor.cc.s"
+	cd /home/guagua/Desktop/LinuxMonitor/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/src/net_monitor.cc -o CMakeFiles/monitor.dir/net_monitor.cc.s
+
 # Object files for target monitor
 monitor_OBJECTS = \
 "CMakeFiles/monitor.dir/cpu_load.cc.o" \
 "CMakeFiles/monitor.dir/cpu_softirq.cc.o" \
 "CMakeFiles/monitor.dir/cpu_stat.cc.o" \
-"CMakeFiles/monitor.dir/read_file.cc.o"
+"CMakeFiles/monitor.dir/read_file.cc.o" \
+"CMakeFiles/monitor.dir/mem_monitor.cc.o" \
+"CMakeFiles/monitor.dir/net_monitor.cc.o"
 
 # External object files for target monitor
 monitor_EXTERNAL_OBJECTS =
@@ -139,9 +169,11 @@ monitor_EXTERNAL_OBJECTS =
 /home/guagua/Desktop/LinuxMonitor/lib/libmonitor.a: src/CMakeFiles/monitor.dir/cpu_softirq.cc.o
 /home/guagua/Desktop/LinuxMonitor/lib/libmonitor.a: src/CMakeFiles/monitor.dir/cpu_stat.cc.o
 /home/guagua/Desktop/LinuxMonitor/lib/libmonitor.a: src/CMakeFiles/monitor.dir/read_file.cc.o
+/home/guagua/Desktop/LinuxMonitor/lib/libmonitor.a: src/CMakeFiles/monitor.dir/mem_monitor.cc.o
+/home/guagua/Desktop/LinuxMonitor/lib/libmonitor.a: src/CMakeFiles/monitor.dir/net_monitor.cc.o
 /home/guagua/Desktop/LinuxMonitor/lib/libmonitor.a: src/CMakeFiles/monitor.dir/build.make
 /home/guagua/Desktop/LinuxMonitor/lib/libmonitor.a: src/CMakeFiles/monitor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library /home/guagua/Desktop/LinuxMonitor/lib/libmonitor.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library /home/guagua/Desktop/LinuxMonitor/lib/libmonitor.a"
 	cd /home/guagua/Desktop/LinuxMonitor/build/src && $(CMAKE_COMMAND) -P CMakeFiles/monitor.dir/cmake_clean_target.cmake
 	cd /home/guagua/Desktop/LinuxMonitor/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/monitor.dir/link.txt --verbose=$(VERBOSE)
 

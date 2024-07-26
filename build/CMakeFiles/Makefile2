@@ -154,12 +154,12 @@ src/clean: src/CMakeFiles/monitor.dir/clean
 src/CMakeFiles/monitor.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/monitor.dir/build.make src/CMakeFiles/monitor.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/monitor.dir/build.make src/CMakeFiles/monitor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=3,4,5,6,7 "Built target monitor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=3,4,5,6,7,8,9 "Built target monitor"
 .PHONY : src/CMakeFiles/monitor.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/monitor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/LinuxMonitor/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/LinuxMonitor/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/monitor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/LinuxMonitor/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/monitor.dir/rule
@@ -180,7 +180,7 @@ src/CMakeFiles/monitor.dir/clean:
 proto/CMakeFiles/proto_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto_lib.dir/build.make proto/CMakeFiles/proto_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f proto/CMakeFiles/proto_lib.dir/build.make proto/CMakeFiles/proto_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=18,19,20,21,22,23,24 "Built target proto_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=20,21,22,23,24,25,26 "Built target proto_lib"
 .PHONY : proto/CMakeFiles/proto_lib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -206,7 +206,7 @@ proto/CMakeFiles/proto_lib.dir/clean:
 rpc/CMakeFiles/mprpc.dir/all:
 	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/mprpc.dir/build.make rpc/CMakeFiles/mprpc.dir/depend
 	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/mprpc.dir/build.make rpc/CMakeFiles/mprpc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15 "Built target mprpc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17 "Built target mprpc"
 .PHONY : rpc/CMakeFiles/mprpc.dir/all
 
 # Build rule for subdir invocation for target.
@@ -234,12 +234,12 @@ example/CMakeFiles/online.dir/all: proto/CMakeFiles/proto_lib.dir/all
 example/CMakeFiles/online.dir/all: rpc/CMakeFiles/mprpc.dir/all
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/online.dir/build.make example/CMakeFiles/online.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/online.dir/build.make example/CMakeFiles/online.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=16,17 "Built target online"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=18,19 "Built target online"
 .PHONY : example/CMakeFiles/online.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/online.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/LinuxMonitor/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/LinuxMonitor/build/CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/online.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/LinuxMonitor/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/online.dir/rule
@@ -262,12 +262,12 @@ example/CMakeFiles/server.dir/all: proto/CMakeFiles/proto_lib.dir/all
 example/CMakeFiles/server.dir/all: rpc/CMakeFiles/mprpc.dir/all
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/server.dir/build.make example/CMakeFiles/server.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/server.dir/build.make example/CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=25,26 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=27,28 "Built target server"
 .PHONY : example/CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/LinuxMonitor/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/LinuxMonitor/build/CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/LinuxMonitor/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/server.dir/rule
@@ -295,7 +295,7 @@ example/CMakeFiles/client.dir/all: rpc/CMakeFiles/mprpc.dir/all
 
 # Build rule for subdir invocation for target.
 example/CMakeFiles/client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/LinuxMonitor/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/LinuxMonitor/build/CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/CMakeFiles/client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guagua/Desktop/LinuxMonitor/build/CMakeFiles 0
 .PHONY : example/CMakeFiles/client.dir/rule

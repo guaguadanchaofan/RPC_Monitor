@@ -7,6 +7,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/monitor.dir/cpu_softirq.cc.o.d"
   "CMakeFiles/monitor.dir/cpu_stat.cc.o"
   "CMakeFiles/monitor.dir/cpu_stat.cc.o.d"
+  "CMakeFiles/monitor.dir/mem_monitor.cc.o"
+  "CMakeFiles/monitor.dir/mem_monitor.cc.o.d"
+  "CMakeFiles/monitor.dir/net_monitor.cc.o"
+  "CMakeFiles/monitor.dir/net_monitor.cc.o.d"
   "CMakeFiles/monitor.dir/read_file.cc.o"
   "CMakeFiles/monitor.dir/read_file.cc.o.d"
 )

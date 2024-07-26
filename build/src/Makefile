@@ -202,6 +202,54 @@ cpu_stat.cc.s:
 	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/monitor.dir/build.make src/CMakeFiles/monitor.dir/cpu_stat.cc.s
 .PHONY : cpu_stat.cc.s
 
+mem_monitor.o: mem_monitor.cc.o
+.PHONY : mem_monitor.o
+
+# target to build an object file
+mem_monitor.cc.o:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/monitor.dir/build.make src/CMakeFiles/monitor.dir/mem_monitor.cc.o
+.PHONY : mem_monitor.cc.o
+
+mem_monitor.i: mem_monitor.cc.i
+.PHONY : mem_monitor.i
+
+# target to preprocess a source file
+mem_monitor.cc.i:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/monitor.dir/build.make src/CMakeFiles/monitor.dir/mem_monitor.cc.i
+.PHONY : mem_monitor.cc.i
+
+mem_monitor.s: mem_monitor.cc.s
+.PHONY : mem_monitor.s
+
+# target to generate assembly for a file
+mem_monitor.cc.s:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/monitor.dir/build.make src/CMakeFiles/monitor.dir/mem_monitor.cc.s
+.PHONY : mem_monitor.cc.s
+
+net_monitor.o: net_monitor.cc.o
+.PHONY : net_monitor.o
+
+# target to build an object file
+net_monitor.cc.o:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/monitor.dir/build.make src/CMakeFiles/monitor.dir/net_monitor.cc.o
+.PHONY : net_monitor.cc.o
+
+net_monitor.i: net_monitor.cc.i
+.PHONY : net_monitor.i
+
+# target to preprocess a source file
+net_monitor.cc.i:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/monitor.dir/build.make src/CMakeFiles/monitor.dir/net_monitor.cc.i
+.PHONY : net_monitor.cc.i
+
+net_monitor.s: net_monitor.cc.s
+.PHONY : net_monitor.s
+
+# target to generate assembly for a file
+net_monitor.cc.s:
+	cd /home/guagua/Desktop/LinuxMonitor/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/monitor.dir/build.make src/CMakeFiles/monitor.dir/net_monitor.cc.s
+.PHONY : net_monitor.cc.s
+
 read_file.o: read_file.cc.o
 .PHONY : read_file.o
 
@@ -244,6 +292,12 @@ help:
 	@echo "... cpu_stat.o"
 	@echo "... cpu_stat.i"
 	@echo "... cpu_stat.s"
+	@echo "... mem_monitor.o"
+	@echo "... mem_monitor.i"
+	@echo "... mem_monitor.s"
+	@echo "... net_monitor.o"
+	@echo "... net_monitor.i"
+	@echo "... net_monitor.s"
 	@echo "... read_file.o"
 	@echo "... read_file.i"
 	@echo "... read_file.s"
