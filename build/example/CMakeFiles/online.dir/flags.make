@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/guagua/Desktop/LinuxMonitor/include/rpc -I/home/guagua/Desktop/LinuxMonitor/proto -I/home/guagua/Desktop/LinuxMonitor/include/monitor
+CXX_INCLUDES = -I/home/guagua/Desktop/LinuxMonitor/include/rpc -I/home/guagua/Desktop/LinuxMonitor/include/mysql -I/home/guagua/Desktop/LinuxMonitor/proto -I/home/guagua/Desktop/LinuxMonitor/include/monitor
 
 CXX_FLAGS = -g -std=gnu++17
 

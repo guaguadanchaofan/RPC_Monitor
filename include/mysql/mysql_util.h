@@ -7,9 +7,10 @@
 #include <iostream>
 
 #define HOST "localhost"
-#define USER "root"
-#define PASSWD "VEVE5217.."
+#define USER "monitor"
+#define PASSWD "123456"
 #define DBHAME "test_db"
+
 class mysql_util
 {
 public:

@@ -13,12 +13,16 @@ set(SOURCE_FILES
 )
 set(SERVER_FILE server.cc)
 set(CILENT_FILE client.cc)
+
 # 添加可执行文件
 add_executable(online ${SOURCE_FILES})
 add_executable(server ${SERVER_FILE})
 add_executable(client ${CILENT_FILE})
 
+
+
 # 链接库
-target_link_libraries(online monitor boost_system boost_chrono proto_lib mprpc)
-target_link_libraries(server monitor boost_system boost_chrono proto_lib mprpc)
-target_link_libraries(client monitor boost_system boost_chrono proto_lib mprpc)
+
+target_link_libraries(online  monitor mysqlclient boost_system boost_chrono proto_lib mprpc)
+target_link_libraries(server  monitor mysqlclient boost_system boost_chrono proto_lib mprpc)
+target_link_libraries(client  monitor mysqlclient boost_system boost_chrono proto_lib mprpc)
