@@ -3,6 +3,8 @@
 /home/guagua/Desktop/LinuxMonitor/build/src/CMakeFiles/monitor.dir
 /home/guagua/Desktop/LinuxMonitor/build/src/CMakeFiles/edit_cache.dir
 /home/guagua/Desktop/LinuxMonitor/build/src/CMakeFiles/rebuild_cache.dir
+/home/guagua/Desktop/LinuxMonitor/build/mysql/CMakeFiles/edit_cache.dir
+/home/guagua/Desktop/LinuxMonitor/build/mysql/CMakeFiles/rebuild_cache.dir
 /home/guagua/Desktop/LinuxMonitor/build/proto/CMakeFiles/proto_lib.dir
 /home/guagua/Desktop/LinuxMonitor/build/proto/CMakeFiles/edit_cache.dir
 /home/guagua/Desktop/LinuxMonitor/build/proto/CMakeFiles/rebuild_cache.dir

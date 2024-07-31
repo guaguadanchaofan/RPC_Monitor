@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/guagua/Desktop/LinuxMonitor/build
 
 # The main recursive "all" target.
 all: src/all
+all: mysql/all
 all: proto/all
 all: rpc/all
 all: example/all
@@ -71,6 +72,7 @@ all: example/all
 
 # The main recursive "preinstall" target.
 preinstall: src/preinstall
+preinstall: mysql/preinstall
 preinstall: proto/preinstall
 preinstall: rpc/preinstall
 preinstall: example/preinstall
@@ -78,6 +80,7 @@ preinstall: example/preinstall
 
 # The main recursive "clean" target.
 clean: src/clean
+clean: mysql/clean
 clean: proto/clean
 clean: rpc/clean
 clean: example/clean
@@ -101,6 +104,21 @@ example/clean: example/CMakeFiles/online.dir/clean
 example/clean: example/CMakeFiles/server.dir/clean
 example/clean: example/CMakeFiles/client.dir/clean
 .PHONY : example/clean
+
+#=============================================================================
+# Directory level rules for directory mysql
+
+# Recursive "all" directory target.
+mysql/all:
+.PHONY : mysql/all
+
+# Recursive "preinstall" directory target.
+mysql/preinstall:
+.PHONY : mysql/preinstall
+
+# Recursive "clean" directory target.
+mysql/clean:
+.PHONY : mysql/clean
 
 #=============================================================================
 # Directory level rules for directory proto

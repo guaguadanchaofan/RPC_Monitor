@@ -73,15 +73,15 @@ example/CMakeFiles/server.dir/server.cc.o: example/CMakeFiles/server.dir/flags.m
 example/CMakeFiles/server.dir/server.cc.o: /home/guagua/Desktop/LinuxMonitor/example/server.cc
 example/CMakeFiles/server.dir/server.cc.o: example/CMakeFiles/server.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/CMakeFiles/server.dir/server.cc.o"
-	cd /home/guagua/Desktop/LinuxMonitor/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/CMakeFiles/server.dir/server.cc.o -MF CMakeFiles/server.dir/server.cc.o.d -o CMakeFiles/server.dir/server.cc.o -c /home/guagua/Desktop/LinuxMonitor/example/server.cc
+	cd /home/guagua/Desktop/LinuxMonitor/build/example && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/CMakeFiles/server.dir/server.cc.o -MF CMakeFiles/server.dir/server.cc.o.d -o CMakeFiles/server.dir/server.cc.o -c /home/guagua/Desktop/LinuxMonitor/example/server.cc
 
 example/CMakeFiles/server.dir/server.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/server.cc.i"
-	cd /home/guagua/Desktop/LinuxMonitor/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/example/server.cc > CMakeFiles/server.dir/server.cc.i
+	cd /home/guagua/Desktop/LinuxMonitor/build/example && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/example/server.cc > CMakeFiles/server.dir/server.cc.i
 
 example/CMakeFiles/server.dir/server.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/server.cc.s"
-	cd /home/guagua/Desktop/LinuxMonitor/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/example/server.cc -o CMakeFiles/server.dir/server.cc.s
+	cd /home/guagua/Desktop/LinuxMonitor/build/example && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/example/server.cc -o CMakeFiles/server.dir/server.cc.s
 
 # Object files for target server
 server_OBJECTS = \

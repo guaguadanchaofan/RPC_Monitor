@@ -21,7 +21,7 @@ project(LinuxMonitor)
 # add_subdirectory(example)
 # add_subdirectory(proto)
 # 设置C++标准
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_BUILD_TYPE "Debug")
 
@@ -34,6 +34,7 @@ include_directories(${PROJECT_SOURCE_DIR}/proto)
 include_directories(${PROJECT_SOURCE_DIR}/include/monitor)
 # 添加子目录
 add_subdirectory(src)
+add_subdirectory(mysql)
 add_subdirectory(proto)
 add_subdirectory(rpc)
 add_subdirectory(example)

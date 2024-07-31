@@ -3,12 +3,15 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include/mysql",
+                "${workspaceFolder}/include/monitor"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",
-            "cStandard": "c17",
-            "intelliSenseMode": "linux-clang-x64"
+            "cStandard": "gnu17",
+            "intelliSenseMode": "linux-clang-x64",
+            "cppStandard": "c++17"
         }
     ],
     "version": 4

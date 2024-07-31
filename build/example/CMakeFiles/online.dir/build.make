@@ -73,15 +73,15 @@ example/CMakeFiles/online.dir/online.cc.o: example/CMakeFiles/online.dir/flags.m
 example/CMakeFiles/online.dir/online.cc.o: /home/guagua/Desktop/LinuxMonitor/example/online.cc
 example/CMakeFiles/online.dir/online.cc.o: example/CMakeFiles/online.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guagua/Desktop/LinuxMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/CMakeFiles/online.dir/online.cc.o"
-	cd /home/guagua/Desktop/LinuxMonitor/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/CMakeFiles/online.dir/online.cc.o -MF CMakeFiles/online.dir/online.cc.o.d -o CMakeFiles/online.dir/online.cc.o -c /home/guagua/Desktop/LinuxMonitor/example/online.cc
+	cd /home/guagua/Desktop/LinuxMonitor/build/example && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/CMakeFiles/online.dir/online.cc.o -MF CMakeFiles/online.dir/online.cc.o.d -o CMakeFiles/online.dir/online.cc.o -c /home/guagua/Desktop/LinuxMonitor/example/online.cc
 
 example/CMakeFiles/online.dir/online.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/online.dir/online.cc.i"
-	cd /home/guagua/Desktop/LinuxMonitor/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/example/online.cc > CMakeFiles/online.dir/online.cc.i
+	cd /home/guagua/Desktop/LinuxMonitor/build/example && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guagua/Desktop/LinuxMonitor/example/online.cc > CMakeFiles/online.dir/online.cc.i
 
 example/CMakeFiles/online.dir/online.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/online.dir/online.cc.s"
-	cd /home/guagua/Desktop/LinuxMonitor/build/example && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/example/online.cc -o CMakeFiles/online.dir/online.cc.s
+	cd /home/guagua/Desktop/LinuxMonitor/build/example && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guagua/Desktop/LinuxMonitor/example/online.cc -o CMakeFiles/online.dir/online.cc.s
 
 # Object files for target online
 online_OBJECTS = \

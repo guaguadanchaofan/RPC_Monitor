@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.27.4/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.4/CMakeSystem.cmake"
   "/home/guagua/Desktop/LinuxMonitor/example/CMakeLists.txt"
+  "/home/guagua/Desktop/LinuxMonitor/mysql/CMakeLists.txt"
   "/home/guagua/Desktop/LinuxMonitor/proto/CMakeLists.txt"
   "/home/guagua/Desktop/LinuxMonitor/rpc/CMakeLists.txt"
   "/home/guagua/Desktop/LinuxMonitor/src/CMakeLists.txt"
@@ -54,6 +55,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "mysql/CMakeFiles/CMakeDirectoryInformation.cmake"
   "proto/CMakeFiles/CMakeDirectoryInformation.cmake"
   "rpc/CMakeFiles/CMakeDirectoryInformation.cmake"
   "example/CMakeFiles/CMakeDirectoryInformation.cmake"
