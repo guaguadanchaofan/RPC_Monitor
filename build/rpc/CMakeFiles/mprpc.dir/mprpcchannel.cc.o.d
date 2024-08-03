@@ -305,4 +305,12 @@ rpc/CMakeFiles/mprpc.dir/mprpcchannel.cc.o: \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
- /usr/include/arpa/inet.h
+ /usr/include/arpa/inet.h \
+ /home/guagua/Desktop/LinuxMonitor/include/rpc/zookeeperutil.h \
+ /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/local/include/zookeeper/zookeeper.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/local/include/zookeeper/proto.h \
+ /usr/local/include/zookeeper/zookeeper_version.h \
+ /usr/local/include/zookeeper/recordio.h \
+ /usr/local/include/zookeeper/zookeeper.jute.h

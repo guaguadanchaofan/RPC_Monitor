@@ -1,5 +1,6 @@
 #include "rpcprovider.h"
 #include "rpcheader.pb.h"
+#include"zookeeperutil.h"
 // 这里是框架提供的外部使用的，可以发布rpc方法的函数接口
 void RpcProvider::NotifyService(google::protobuf::Service *service)
 {
@@ -40,6 +41,25 @@ void RpcProvider::Run()
 
     // 设置muduo库的线程数量
     server.setThreadNum(4);
+
+    ZkClient zkcli;
+    zkcli.Start();
+    // server_name为永久性节点  method_name为临时性节点
+    for (auto &sp : _serviceMap)
+    {
+        // /service_name
+        std::string service_path = "/" + sp.first;
+        zkcli.Create(service_path.c_str(), nullptr, 0);
+        for (auto &mp : sp.second._methodMap)
+        {
+            std::string method_path = service_path + "/" + mp.first;
+            char method_path_data[128] = {0};
+            sprintf(method_path_data, "%s:%d", ip.c_str(), port);
+            //ZOO_EPHEMERAL表示znode是个临时性节点
+            zkcli.Create(method_path.c_str(),method_path_data,strlen(method_path_data),ZOO_EPHEMERAL);
+        }
+    }
+
     LOG_INFO("RpcProvider start service at IP : %s  Port:%d ",ip.c_str(),port);
 
     // 启动网络服务

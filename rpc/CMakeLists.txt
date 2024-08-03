@@ -17,6 +17,7 @@ set(SOURCE_FILES
     mprpcontrller.cc
     rpcheader.pb.cc
     rpcprovider.cc
+    zookeeperutil.cc
 )
 
 # 添加库

@@ -1,0 +1,4 @@
+[02:30:47][INFO]service_name : RpcManager
+[02:30:47][INFO]method_name : SetMonitorInfo
+[02:30:47][INFO]method_name : GetMonitorInfo
+[02:30:47][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 

@@ -23,6 +23,6 @@ add_executable(client ${CILENT_FILE})
 
 # 链接库
 
-target_link_libraries(online  monitor mysqlclient boost_system boost_chrono proto_lib mprpc)
-target_link_libraries(server  monitor mysqlclient boost_system boost_chrono proto_lib mprpc)
-target_link_libraries(client  monitor mysqlclient boost_system boost_chrono proto_lib mprpc)
+target_link_libraries(online  monitor mysqlclient boost_system boost_chrono proto_lib mprpc zookeeper_mt)
+target_link_libraries(server  monitor mysqlclient boost_system boost_chrono proto_lib mprpc zookeeper_mt)
+target_link_libraries(client  monitor mysqlclient boost_system boost_chrono proto_lib mprpc zookeeper_mt)
