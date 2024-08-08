@@ -22,7 +22,7 @@ public:
     }
     bool insert(monitor::proto::MonitorInfo* info)
     {
-#define INSERT_CPULOAD "insert cpu_load values('%s',now(),%f,%f,%f);"
+#define INSERT_CPULOAD "insert into cpu_load values('%s',now(),%f,%f,%f);"
         std::string name = info->name();
         auto cpu_load = info->cpu_load();
         float lavg_1 = cpu_load.lavg_1();

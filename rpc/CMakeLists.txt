@@ -1,7 +1,7 @@
 # aux_source_directory(. SRC_LIST)#当前目录下所有源文件
 # add_library(mprpc ${SRC_LIST})#生成静态态库
 # target_link_libraries(mprpc muduo_net muduo_base pthread)
-cmake_minimum_required(VERSION 3.27.4)
+#cmake_minimum_required(VERSION 3.27.4)
 
 project(MPRPC)
 
@@ -21,7 +21,7 @@ set(SOURCE_FILES
 )
 
 # 添加库
-add_library(mprpc ${SOURCE_FILES})
+add_library(mprpc  ${SOURCE_FILES})
 
 # 添加Protobuf依赖
 find_package(Protobuf REQUIRED)

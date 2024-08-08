@@ -21,7 +21,7 @@
 
 # # 添加头文件目录
 # target_include_directories(proto_lib PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
-cmake_minimum_required(VERSION 3.27.4)
+#cmake_minimum_required(VERSION 3.27.4)
 project(ProtoLib)
 
 # 包含头文件目录
@@ -38,7 +38,7 @@ set(PROTO_FILES
 )
 
 # 添加库
-add_library(proto_lib ${PROTO_FILES})
+add_library(proto_lib  ${PROTO_FILES})
 
 # 添加Protobuf依赖
 find_package(Protobuf REQUIRED)

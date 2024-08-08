@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/guagua/Desktop/LinuxMonitor/lib/libmprpc.a"
-  "/home/guagua/Desktop/LinuxMonitor/lib/libmprpc.pdb"
+  "../../lib/libmprpc.a"
+  "../../lib/libmprpc.pdb"
   "CMakeFiles/mprpc.dir/logger.cc.o"
   "CMakeFiles/mprpc.dir/logger.cc.o.d"
   "CMakeFiles/mprpc.dir/mprpcapplication.cc.o"

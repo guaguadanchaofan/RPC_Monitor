@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/guagua/Desktop/LinuxMonitor/bin/server"
+			"path" : "/home/guagua/Desktop/work/RPC_Monitor/bin/server"
 		}
 	],
 	"backtrace" : 1,
@@ -17,8 +17,6 @@
 		"files" : 
 		[
 			"example/CMakeLists.txt",
-			"rpc/CMakeLists.txt",
-			"proto/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -42,46 +40,28 @@
 				"file" : 1
 			},
 			{
-				"command" : 1,
+				"command" : 2,
 				"file" : 1,
-				"line" : 29,
+				"line" : 31,
 				"parent" : 3
 			},
 			{
-				"file" : 2
-			},
-			{
-				"command" : 1,
-				"file" : 2,
-				"line" : 46,
-				"parent" : 5
-			},
-			{
-				"file" : 3
-			},
-			{
 				"command" : 2,
-				"file" : 3,
-				"line" : 31,
-				"parent" : 7
-			},
-			{
-				"command" : 2,
-				"file" : 3,
+				"file" : 1,
 				"line" : 32,
-				"parent" : 7
+				"parent" : 3
 			},
 			{
 				"command" : 2,
-				"file" : 3,
+				"file" : 1,
 				"line" : 33,
-				"parent" : 7
+				"parent" : 3
 			},
 			{
 				"command" : 2,
-				"file" : 3,
+				"file" : 1,
 				"line" : 34,
-				"parent" : 7
+				"parent" : 3
 			}
 		]
 	},
@@ -91,26 +71,29 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++11"
+					"fragment" : "-g"
+				},
+				{
+					"fragment" : "-std=gnu++11"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 8,
-					"path" : "/home/guagua/Desktop/LinuxMonitor/include/rpc"
+					"backtrace" : 4,
+					"path" : "/home/guagua/Desktop/work/RPC_Monitor/include/rpc"
 				},
 				{
-					"backtrace" : 9,
-					"path" : "/home/guagua/Desktop/LinuxMonitor/include/mysql"
+					"backtrace" : 5,
+					"path" : "/home/guagua/Desktop/work/RPC_Monitor/include/mysql"
 				},
 				{
-					"backtrace" : 10,
-					"path" : "/home/guagua/Desktop/LinuxMonitor/proto"
+					"backtrace" : 6,
+					"path" : "/home/guagua/Desktop/work/RPC_Monitor/proto"
 				},
 				{
-					"backtrace" : 11,
-					"path" : "/home/guagua/Desktop/LinuxMonitor/include/monitor"
+					"backtrace" : 7,
+					"path" : "/home/guagua/Desktop/work/RPC_Monitor/include/monitor"
 				}
 			],
 			"language" : "CXX",
@@ -132,15 +115,15 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "monitor::@145eef247bfb46b6828c"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "proto_lib::@4dcc01eb4302123f3a4a"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "mprpc::@1745d478b0787f6aa9e6"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "monitor::@145eef247bfb46b6828c"
 		}
 	],
 	"id" : "server::@70983d692f648185febe",
@@ -162,7 +145,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/home/guagua/Desktop/LinuxMonitor/lib/libmonitor.a",
+				"fragment" : "../../lib/libmonitor.a",
 				"role" : "libraries"
 			},
 			{
@@ -182,12 +165,12 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a",
+				"fragment" : "../../lib/libproto_lib.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/home/guagua/Desktop/LinuxMonitor/lib/libmprpc.a",
+				"fragment" : "../../lib/libmprpc.a",
 				"role" : "libraries"
 			},
 			{
@@ -196,22 +179,18 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
 				"fragment" : "-lmuduo_net",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
 				"fragment" : "-lmuduo_base",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
 				"fragment" : "-lpthread",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 6,
 				"fragment" : "/usr/local/lib/libprotobuf.so",
 				"role" : "libraries"
 			}

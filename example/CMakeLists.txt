@@ -3,7 +3,7 @@
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
 # add_executable(consumer ${SRC_LIST})
 # target_link_libraries(consumer proto_lib mprpc protobuf)
-cmake_minimum_required(VERSION 3.27.4)
+#cmake_minimum_required(VERSION 3.27.4)
 project(Example)
 # 添加源文件
 set(SOURCE_FILES

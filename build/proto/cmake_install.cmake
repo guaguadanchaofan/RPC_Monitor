@@ -1,4 +1,4 @@
-# Install script for directory: /home/guagua/Desktop/LinuxMonitor/proto
+# Install script for directory: /home/guagua/Desktop/work/RPC_Monitor/proto
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

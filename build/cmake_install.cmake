@@ -1,4 +1,4 @@
-# Install script for directory: /home/guagua/Desktop/LinuxMonitor
+# Install script for directory: /home/guagua/Desktop/work/RPC_Monitor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,27 +44,27 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/guagua/Desktop/LinuxMonitor/build/src/cmake_install.cmake")
+  include("/home/guagua/Desktop/work/RPC_Monitor/build/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/guagua/Desktop/LinuxMonitor/build/mysql/cmake_install.cmake")
+  include("/home/guagua/Desktop/work/RPC_Monitor/build/mysql/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/guagua/Desktop/LinuxMonitor/build/proto/cmake_install.cmake")
+  include("/home/guagua/Desktop/work/RPC_Monitor/build/proto/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/guagua/Desktop/LinuxMonitor/build/rpc/cmake_install.cmake")
+  include("/home/guagua/Desktop/work/RPC_Monitor/build/rpc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/guagua/Desktop/LinuxMonitor/build/example/cmake_install.cmake")
+  include("/home/guagua/Desktop/work/RPC_Monitor/build/example/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -75,5 +75,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/guagua/Desktop/LinuxMonitor/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/guagua/Desktop/work/RPC_Monitor/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

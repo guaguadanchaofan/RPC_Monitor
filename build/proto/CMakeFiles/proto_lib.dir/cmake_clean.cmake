@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.a"
-  "/home/guagua/Desktop/LinuxMonitor/lib/libproto_lib.pdb"
+  "../../lib/libproto_lib.a"
+  "../../lib/libproto_lib.pdb"
   "CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o"
   "CMakeFiles/proto_lib.dir/cpu_load.pb.cc.o.d"
   "CMakeFiles/proto_lib.dir/cpu_softirq.pb.cc.o"

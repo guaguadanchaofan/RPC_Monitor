@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.27.4)#设置camke最低版本和项目名称
+cmake_minimum_required(VERSION 3.22.1)#设置camke最低版本和项目名称
 project(LinuxMonitor)
 # #生成debug版本进行gdb调试
 # set(CMAKE_BUILD_TYPE "Debug")
@@ -40,4 +40,4 @@ add_subdirectory(rpc)
 add_subdirectory(example)
 
 # 确保位置无关代码（PIC）
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")

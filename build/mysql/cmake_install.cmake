@@ -1,4 +1,4 @@
-# Install script for directory: /home/guagua/Desktop/LinuxMonitor/mysql
+# Install script for directory: /home/guagua/Desktop/work/RPC_Monitor/mysql
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

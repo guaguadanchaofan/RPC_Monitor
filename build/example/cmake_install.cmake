@@ -1,4 +1,4 @@
-# Install script for directory: /home/guagua/Desktop/LinuxMonitor/example
+# Install script for directory: /home/guagua/Desktop/work/RPC_Monitor/example
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

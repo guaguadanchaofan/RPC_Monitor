@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/guagua/Desktop/LinuxMonitor/bin/server"
-  "/home/guagua/Desktop/LinuxMonitor/bin/server.pdb"
+  "../../bin/server"
+  "../../bin/server.pdb"
   "CMakeFiles/server.dir/server.cc.o"
   "CMakeFiles/server.dir/server.cc.o.d"
 )
