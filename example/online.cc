@@ -32,8 +32,8 @@ int main(int argc, char **argv)
             runner->UpdataOnce(&monitor_info);
         }
         stub.SetMonitorInfo(nullptr, &monitor_info, &code, nullptr);
-        sleep(3);
-        //std::this_thread::sleep_for(std::chrono::seconds(3));
+        //sleep(3);
+        std::this_thread::sleep_for(std::chrono::seconds(3));
     }
     return 0;
 }

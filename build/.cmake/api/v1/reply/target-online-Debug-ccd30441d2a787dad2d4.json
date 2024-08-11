@@ -115,6 +115,10 @@
 	[
 		{
 			"backtrace" : 2,
+			"id" : "mysql::@f65a429cd5ed81adfdd0"
+		},
+		{
+			"backtrace" : 2,
 			"id" : "proto_lib::@4dcc01eb4302123f3a4a"
 		},
 		{
@@ -146,6 +150,16 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "../../lib/libmonitor.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../lib/libmysql.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-ljsoncpp",
 				"role" : "libraries"
 			},
 			{

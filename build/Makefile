@@ -130,6 +130,19 @@ monitor/fast:
 .PHONY : monitor/fast
 
 #=============================================================================
+# Target rules for targets named mysql
+
+# Build rule for target.
+mysql: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mysql
+.PHONY : mysql
+
+# fast build rule for target.
+mysql/fast:
+	$(MAKE) $(MAKESILENT) -f mysql/CMakeFiles/mysql.dir/build.make mysql/CMakeFiles/mysql.dir/build
+.PHONY : mysql/fast
+
+#=============================================================================
 # Target rules for targets named proto_lib
 
 # Build rule for target.
@@ -205,6 +218,7 @@ help:
 	@echo "... client"
 	@echo "... monitor"
 	@echo "... mprpc"
+	@echo "... mysql"
 	@echo "... online"
 	@echo "... proto_lib"
 	@echo "... server"

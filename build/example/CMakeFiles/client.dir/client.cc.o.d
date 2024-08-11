@@ -312,19 +312,7 @@ example/CMakeFiles/client.dir/client.cc.o: \
  /home/guagua/Desktop/work/RPC_Monitor/proto/net_info.pb.h \
  /home/guagua/Desktop/work/RPC_Monitor/include/monitor/monitor.h \
  /home/guagua/Desktop/work/RPC_Monitor/include/monitor/cpu_load.h \
- /home/guagua/Desktop/work/RPC_Monitor/include/mysql/mysql_monitor.h \
- /home/guagua/Desktop/work/RPC_Monitor/include/mysql/mysql_util.h \
- /usr/include/mysql/mysql.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
- /usr/include/mysql/field_types.h /usr/include/mysql/my_list.h \
- /usr/include/mysql/mysql_com.h /usr/include/mysql/my_command.h \
- /usr/include/mysql/my_compress.h \
- /usr/include/mysql/udf_registration_types.h \
- /usr/include/mysql/client_plugin.h \
- /usr/include/mysql/plugin_auth_common.h \
- /usr/include/mysql/mysql_version.h /usr/include/mysql/mysql_time.h \
- /usr/include/mysql/errmsg.h /usr/include/c++/11/thread \
- /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/thread /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/iomanip \
  /usr/include/c++/11/locale \
  /usr/include/c++/11/bits/locale_facets_nonio.h \

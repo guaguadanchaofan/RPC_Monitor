@@ -278,6 +278,15 @@ Protobuf_PROTOC_LIBRARY_DEBUG:FILEPATH=/usr/local/lib/libprotoc.so
 //Path to a library.
 Protobuf_PROTOC_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libprotoc.so
 
+//Value Computed by CMake
+msqlpool_BINARY_DIR:STATIC=/home/guagua/Desktop/work/RPC_Monitor/build/mysql
+
+//Value Computed by CMake
+msqlpool_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+msqlpool_SOURCE_DIR:STATIC=/home/guagua/Desktop/work/RPC_Monitor/mysql
+
 
 ########################
 # INTERNAL cache entries

@@ -1464,6 +1464,42 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/local/lib/libprotoc.so"
+		},
+		{
+			"name" : "msqlpool_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/guagua/Desktop/work/RPC_Monitor/build/mysql"
+		},
+		{
+			"name" : "msqlpool_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "msqlpool_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/guagua/Desktop/work/RPC_Monitor/mysql"
 		}
 	],
 	"kind" : "cache",

@@ -93,6 +93,7 @@ server_EXTERNAL_OBJECTS =
 ../bin/server: example/CMakeFiles/server.dir/server.cc.o
 ../bin/server: example/CMakeFiles/server.dir/build.make
 ../bin/server: ../lib/libmonitor.a
+../bin/server: ../lib/libmysql.a
 ../bin/server: ../lib/libproto_lib.a
 ../bin/server: ../lib/libmprpc.a
 ../bin/server: /usr/local/lib/libprotobuf.so

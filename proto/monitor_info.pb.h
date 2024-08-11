@@ -53,7 +53,7 @@ struct TableStruct_monitor_5finfo_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxillaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[2]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[3]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -68,11 +68,15 @@ extern CodeDefaultTypeInternal _Code_default_instance_;
 class MonitorInfo;
 class MonitorInfoDefaultTypeInternal;
 extern MonitorInfoDefaultTypeInternal _MonitorInfo_default_instance_;
+class machine;
+class machineDefaultTypeInternal;
+extern machineDefaultTypeInternal _machine_default_instance_;
 }  // namespace proto
 }  // namespace monitor
 PROTOBUF_NAMESPACE_OPEN
 template<> ::monitor::proto::Code* Arena::CreateMaybeMessage<::monitor::proto::Code>(Arena*);
 template<> ::monitor::proto::MonitorInfo* Arena::CreateMaybeMessage<::monitor::proto::MonitorInfo>(Arena*);
+template<> ::monitor::proto::machine* Arena::CreateMaybeMessage<::monitor::proto::machine>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace monitor {
 namespace proto {
@@ -434,6 +438,141 @@ class Code :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_monitor_5finfo_2eproto;
 };
+// -------------------------------------------------------------------
+
+class machine :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:monitor.proto.machine) */ {
+ public:
+  machine();
+  virtual ~machine();
+
+  machine(const machine& from);
+  machine(machine&& from) noexcept
+    : machine() {
+    *this = ::std::move(from);
+  }
+
+  inline machine& operator=(const machine& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline machine& operator=(machine&& from) noexcept {
+    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const machine& default_instance();
+
+  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
+  static inline const machine* internal_default_instance() {
+    return reinterpret_cast<const machine*>(
+               &_machine_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    2;
+
+  friend void swap(machine& a, machine& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(machine* other) {
+    if (other == this) return;
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline machine* New() const final {
+    return CreateMaybeMessage<machine>(nullptr);
+  }
+
+  machine* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<machine>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const machine& from);
+  void MergeFrom(const machine& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(machine* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "monitor.proto.machine";
+  }
+  private:
+  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {
+    return nullptr;
+  }
+  inline void* MaybeArenaPtr() const {
+    return nullptr;
+  }
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_monitor_5finfo_2eproto);
+    return ::descriptor_table_monitor_5finfo_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kNameFieldNumber = 1,
+  };
+  // string name = 1;
+  void clear_name();
+  const std::string& name() const;
+  void set_name(const std::string& value);
+  void set_name(std::string&& value);
+  void set_name(const char* value);
+  void set_name(const char* value, size_t size);
+  std::string* mutable_name();
+  std::string* release_name();
+  void set_allocated_name(std::string* name);
+  private:
+  const std::string& _internal_name() const;
+  void _internal_set_name(const std::string& value);
+  std::string* _internal_mutable_name();
+  public:
+
+  // @@protoc_insertion_point(class_scope:monitor.proto.machine)
+ private:
+  class _Internal;
+
+  ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_monitor_5finfo_2eproto;
+};
 // ===================================================================
 
 class RpcManager_Stub;
@@ -454,7 +593,7 @@ class RpcManager : public ::PROTOBUF_NAMESPACE_ID::Service {
                        ::monitor::proto::Code* response,
                        ::google::protobuf::Closure* done);
   virtual void GetMonitorInfo(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                       const ::monitor::proto::Code* request,
+                       const ::monitor::proto::machine* request,
                        ::monitor::proto::MonitorInfo* response,
                        ::google::protobuf::Closure* done);
 
@@ -491,7 +630,7 @@ class RpcManager_Stub : public RpcManager {
                        ::monitor::proto::Code* response,
                        ::google::protobuf::Closure* done);
   void GetMonitorInfo(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                       const ::monitor::proto::Code* request,
+                       const ::monitor::proto::machine* request,
                        ::monitor::proto::MonitorInfo* response,
                        ::google::protobuf::Closure* done);
  private:
@@ -812,9 +951,75 @@ inline void Code::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:monitor.proto.Code.code)
 }
 
+// -------------------------------------------------------------------
+
+// machine
+
+// string name = 1;
+inline void machine::clear_name() {
+  name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& machine::name() const {
+  // @@protoc_insertion_point(field_get:monitor.proto.machine.name)
+  return _internal_name();
+}
+inline void machine::set_name(const std::string& value) {
+  _internal_set_name(value);
+  // @@protoc_insertion_point(field_set:monitor.proto.machine.name)
+}
+inline std::string* machine::mutable_name() {
+  // @@protoc_insertion_point(field_mutable:monitor.proto.machine.name)
+  return _internal_mutable_name();
+}
+inline const std::string& machine::_internal_name() const {
+  return name_.GetNoArena();
+}
+inline void machine::_internal_set_name(const std::string& value) {
+  
+  name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+}
+inline void machine::set_name(std::string&& value) {
+  
+  name_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:monitor.proto.machine.name)
+}
+inline void machine::set_name(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:monitor.proto.machine.name)
+}
+inline void machine::set_name(const char* value, size_t size) {
+  
+  name_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:monitor.proto.machine.name)
+}
+inline std::string* machine::_internal_mutable_name() {
+  
+  return name_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* machine::release_name() {
+  // @@protoc_insertion_point(field_release:monitor.proto.machine.name)
+  
+  return name_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void machine::set_allocated_name(std::string* name) {
+  if (name != nullptr) {
+    
+  } else {
+    
+  }
+  name_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), name);
+  // @@protoc_insertion_point(field_set_allocated:monitor.proto.machine.name)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 

@@ -1,0 +1,52 @@
+[00:10:04][INFO]service_name : RpcManager
+[00:10:04][INFO]method_name : SetMonitorInfo
+[00:10:04][INFO]method_name : GetMonitorInfo
+[00:10:04][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[00:12:20][INFO]service_name : RpcManager
+[00:12:20][INFO]method_name : SetMonitorInfo
+[00:12:20][INFO]method_name : GetMonitorInfo
+[00:12:20][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[00:17:58][INFO]service_name : RpcManager
+[00:17:58][INFO]method_name : SetMonitorInfo
+[00:17:58][INFO]method_name : GetMonitorInfo
+[00:17:58][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[00:19:30][INFO]service_name : RpcManager
+[00:19:30][INFO]method_name : SetMonitorInfo
+[00:19:30][INFO]method_name : GetMonitorInfo
+[00:19:30][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[00:31:41][INFO]service_name : RpcManager
+[00:31:41][INFO]method_name : SetMonitorInfo
+[00:31:41][INFO]method_name : GetMonitorInfo
+[00:31:41][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[00:34:04][INFO]service_name : RpcManager
+[00:34:04][INFO]method_name : SetMonitorInfo
+[00:34:04][INFO]method_name : GetMonitorInfo
+[00:34:04][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[00:37:23][INFO]service_name : RpcManager
+[00:37:23][INFO]method_name : SetMonitorInfo
+[00:37:23][INFO]method_name : GetMonitorInfo
+[00:37:23][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[00:38:05][INFO]service_name : RpcManager
+[00:38:05][INFO]method_name : SetMonitorInfo
+[00:38:05][INFO]method_name : GetMonitorInfo
+[00:38:05][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[00:38:42][INFO]service_name : RpcManager
+[00:38:42][INFO]method_name : SetMonitorInfo
+[00:38:42][INFO]method_name : GetMonitorInfo
+[00:38:42][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[00:42:27][INFO]service_name : RpcManager
+[00:42:27][INFO]method_name : SetMonitorInfo
+[00:42:27][INFO]method_name : GetMonitorInfo
+[00:42:27][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[00:43:13][INFO]service_name : RpcManager
+[00:43:13][INFO]method_name : SetMonitorInfo
+[00:43:13][INFO]method_name : GetMonitorInfo
+[00:43:13][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[00:44:37][INFO]service_name : RpcManager
+[00:44:37][INFO]method_name : SetMonitorInfo
+[00:44:37][INFO]method_name : GetMonitorInfo
+[00:44:37][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 
+[00:49:35][INFO]service_name : RpcManager
+[00:49:35][INFO]method_name : SetMonitorInfo
+[00:49:35][INFO]method_name : GetMonitorInfo
+[00:49:35][INFO]RpcProvider start service at IP : 127.0.0.1  Port:8080 

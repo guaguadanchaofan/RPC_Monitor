@@ -93,6 +93,7 @@ online_EXTERNAL_OBJECTS =
 ../bin/online: example/CMakeFiles/online.dir/online.cc.o
 ../bin/online: example/CMakeFiles/online.dir/build.make
 ../bin/online: ../lib/libmonitor.a
+../bin/online: ../lib/libmysql.a
 ../bin/online: ../lib/libproto_lib.a
 ../bin/online: ../lib/libmprpc.a
 ../bin/online: /usr/local/lib/libprotobuf.so

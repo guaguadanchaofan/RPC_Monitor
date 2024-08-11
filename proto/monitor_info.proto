@@ -21,17 +21,22 @@ message MonitorInfo
     repeated NetInfo net_info = 6;
 }
 
+
 message Code
 {
     int32 code = 1;
 }
   
+message machine
 
+{
+    string name = 1;
+}
 
 service RpcManager
 {
     rpc SetMonitorInfo(MonitorInfo)returns(Code)
     {}
-    rpc GetMonitorInfo(Code)returns(MonitorInfo)
+    rpc GetMonitorInfo(machine)returns(MonitorInfo)
     {}
 }

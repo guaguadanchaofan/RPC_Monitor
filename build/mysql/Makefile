@@ -116,6 +116,68 @@ depend:
 	cd /home/guagua/Desktop/work/RPC_Monitor/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+mysql/CMakeFiles/mysql.dir/rule:
+	cd /home/guagua/Desktop/work/RPC_Monitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mysql/CMakeFiles/mysql.dir/rule
+.PHONY : mysql/CMakeFiles/mysql.dir/rule
+
+# Convenience name for target.
+mysql: mysql/CMakeFiles/mysql.dir/rule
+.PHONY : mysql
+
+# fast build rule for target.
+mysql/fast:
+	cd /home/guagua/Desktop/work/RPC_Monitor/build && $(MAKE) $(MAKESILENT) -f mysql/CMakeFiles/mysql.dir/build.make mysql/CMakeFiles/mysql.dir/build
+.PHONY : mysql/fast
+
+ConnectionPool.o: ConnectionPool.cc.o
+.PHONY : ConnectionPool.o
+
+# target to build an object file
+ConnectionPool.cc.o:
+	cd /home/guagua/Desktop/work/RPC_Monitor/build && $(MAKE) $(MAKESILENT) -f mysql/CMakeFiles/mysql.dir/build.make mysql/CMakeFiles/mysql.dir/ConnectionPool.cc.o
+.PHONY : ConnectionPool.cc.o
+
+ConnectionPool.i: ConnectionPool.cc.i
+.PHONY : ConnectionPool.i
+
+# target to preprocess a source file
+ConnectionPool.cc.i:
+	cd /home/guagua/Desktop/work/RPC_Monitor/build && $(MAKE) $(MAKESILENT) -f mysql/CMakeFiles/mysql.dir/build.make mysql/CMakeFiles/mysql.dir/ConnectionPool.cc.i
+.PHONY : ConnectionPool.cc.i
+
+ConnectionPool.s: ConnectionPool.cc.s
+.PHONY : ConnectionPool.s
+
+# target to generate assembly for a file
+ConnectionPool.cc.s:
+	cd /home/guagua/Desktop/work/RPC_Monitor/build && $(MAKE) $(MAKESILENT) -f mysql/CMakeFiles/mysql.dir/build.make mysql/CMakeFiles/mysql.dir/ConnectionPool.cc.s
+.PHONY : ConnectionPool.cc.s
+
+mysqlconn.o: mysqlconn.cc.o
+.PHONY : mysqlconn.o
+
+# target to build an object file
+mysqlconn.cc.o:
+	cd /home/guagua/Desktop/work/RPC_Monitor/build && $(MAKE) $(MAKESILENT) -f mysql/CMakeFiles/mysql.dir/build.make mysql/CMakeFiles/mysql.dir/mysqlconn.cc.o
+.PHONY : mysqlconn.cc.o
+
+mysqlconn.i: mysqlconn.cc.i
+.PHONY : mysqlconn.i
+
+# target to preprocess a source file
+mysqlconn.cc.i:
+	cd /home/guagua/Desktop/work/RPC_Monitor/build && $(MAKE) $(MAKESILENT) -f mysql/CMakeFiles/mysql.dir/build.make mysql/CMakeFiles/mysql.dir/mysqlconn.cc.i
+.PHONY : mysqlconn.cc.i
+
+mysqlconn.s: mysqlconn.cc.s
+.PHONY : mysqlconn.s
+
+# target to generate assembly for a file
+mysqlconn.cc.s:
+	cd /home/guagua/Desktop/work/RPC_Monitor/build && $(MAKE) $(MAKESILENT) -f mysql/CMakeFiles/mysql.dir/build.make mysql/CMakeFiles/mysql.dir/mysqlconn.cc.s
+.PHONY : mysqlconn.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +186,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... mysql"
+	@echo "... ConnectionPool.o"
+	@echo "... ConnectionPool.i"
+	@echo "... ConnectionPool.s"
+	@echo "... mysqlconn.o"
+	@echo "... mysqlconn.i"
+	@echo "... mysqlconn.s"
 .PHONY : help
 
 

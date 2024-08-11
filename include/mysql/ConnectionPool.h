@@ -12,7 +12,8 @@ public:
   static ConnectionPool *getConnectPool();
   ConnectionPool(const ConnectionPool &) = delete;
   ConnectionPool &operator=(const ConnectionPool &) = delete;
-  std::shared_ptr<databaseConnect> getConnection();
+  std::shared_ptr<databaseConnect> getConnection(); //获取连接
+  //databaseConnect* getConnection();
   ~ConnectionPool();
 
 private:

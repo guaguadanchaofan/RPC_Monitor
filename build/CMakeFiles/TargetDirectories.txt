@@ -3,6 +3,7 @@
 /home/guagua/Desktop/work/RPC_Monitor/build/src/CMakeFiles/monitor.dir
 /home/guagua/Desktop/work/RPC_Monitor/build/src/CMakeFiles/edit_cache.dir
 /home/guagua/Desktop/work/RPC_Monitor/build/src/CMakeFiles/rebuild_cache.dir
+/home/guagua/Desktop/work/RPC_Monitor/build/mysql/CMakeFiles/mysql.dir
 /home/guagua/Desktop/work/RPC_Monitor/build/mysql/CMakeFiles/edit_cache.dir
 /home/guagua/Desktop/work/RPC_Monitor/build/mysql/CMakeFiles/rebuild_cache.dir
 /home/guagua/Desktop/work/RPC_Monitor/build/proto/CMakeFiles/proto_lib.dir

@@ -32,8 +32,8 @@ ZkClient::~ZkClient()
 
 void ZkClient::Start()
 {
-    std::string host = MprpcApplication::GetInstance().GetConfig().Load("zeekeeperip");
-    std::string port = MprpcApplication::GetInstance().GetConfig().Load("zeekeeperport");
+    std::string host = MprpcApplication::GetInstance().GetConfig().Load("zookeeperip");
+    std::string port = MprpcApplication::GetInstance().GetConfig().Load("zookeeperport");
     std::string connstr = host + ":" + port;
     /*
     zookeeper_mt:多线程版本

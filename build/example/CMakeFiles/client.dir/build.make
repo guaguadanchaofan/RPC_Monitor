@@ -93,6 +93,7 @@ client_EXTERNAL_OBJECTS =
 ../bin/client: example/CMakeFiles/client.dir/client.cc.o
 ../bin/client: example/CMakeFiles/client.dir/build.make
 ../bin/client: ../lib/libmonitor.a
+../bin/client: ../lib/libmysql.a
 ../bin/client: ../lib/libproto_lib.a
 ../bin/client: ../lib/libmprpc.a
 ../bin/client: /usr/local/lib/libprotobuf.so

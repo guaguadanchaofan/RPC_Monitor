@@ -63,6 +63,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/monitor.dir/DependInfo.cmake"
+  "mysql/CMakeFiles/mysql.dir/DependInfo.cmake"
   "proto/CMakeFiles/proto_lib.dir/DependInfo.cmake"
   "rpc/CMakeFiles/mprpc.dir/DependInfo.cmake"
   "example/CMakeFiles/online.dir/DependInfo.cmake"

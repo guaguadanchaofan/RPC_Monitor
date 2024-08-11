@@ -45,8 +45,12 @@
 						"string" : "3.22.1"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 0,
-					"source" : "mysql"
+					"projectIndex" : 2,
+					"source" : "mysql",
+					"targetIndexes" : 
+					[
+						3
+					]
 				},
 				{
 					"build" : "proto",
@@ -56,11 +60,11 @@
 						"string" : "3.22.1"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 2,
+					"projectIndex" : 3,
 					"source" : "proto",
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				},
 				{
@@ -71,7 +75,7 @@
 						"string" : "3.22.1"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 3,
+					"projectIndex" : 4,
 					"source" : "rpc",
 					"targetIndexes" : 
 					[
@@ -86,13 +90,13 @@
 						"string" : "3.22.1"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 4,
+					"projectIndex" : 5,
 					"source" : "example",
 					"targetIndexes" : 
 					[
 						0,
-						3,
-						5
+						4,
+						6
 					]
 				}
 			],
@@ -105,12 +109,12 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					],
 					"directoryIndexes" : 
 					[
-						0,
-						2
+						0
 					],
 					"name" : "LinuxMonitor"
 				},
@@ -129,13 +133,25 @@
 				{
 					"directoryIndexes" : 
 					[
+						2
+					],
+					"name" : "msqlpool",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
 						3
 					],
 					"name" : "ProtoLib",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				},
 				{
@@ -160,8 +176,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						3,
-						5
+						4,
+						6
 					]
 				}
 			],
@@ -170,9 +186,9 @@
 				{
 					"directoryIndex" : 5,
 					"id" : "client::@70983d692f648185febe",
-					"jsonFile" : "target-client-Debug-4114184b37597e8c5fd5.json",
+					"jsonFile" : "target-client-Debug-966e4f9009275277e4b7.json",
 					"name" : "client",
-					"projectIndex" : 4
+					"projectIndex" : 5
 				},
 				{
 					"directoryIndex" : 1,
@@ -186,28 +202,35 @@
 					"id" : "mprpc::@1745d478b0787f6aa9e6",
 					"jsonFile" : "target-mprpc-Debug-f9628b1079226ff82416.json",
 					"name" : "mprpc",
-					"projectIndex" : 3
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "mysql::@f65a429cd5ed81adfdd0",
+					"jsonFile" : "target-mysql-Debug-2ec01aff23f26b1f97ed.json",
+					"name" : "mysql",
+					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 5,
 					"id" : "online::@70983d692f648185febe",
-					"jsonFile" : "target-online-Debug-c7d93edaaf8097485427.json",
+					"jsonFile" : "target-online-Debug-ccd30441d2a787dad2d4.json",
 					"name" : "online",
-					"projectIndex" : 4
+					"projectIndex" : 5
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "proto_lib::@4dcc01eb4302123f3a4a",
 					"jsonFile" : "target-proto_lib-Debug-4f6b5c503d87785a1100.json",
 					"name" : "proto_lib",
-					"projectIndex" : 2
+					"projectIndex" : 3
 				},
 				{
 					"directoryIndex" : 5,
 					"id" : "server::@70983d692f648185febe",
-					"jsonFile" : "target-server-Debug-86d76c961dc6b2f808da.json",
+					"jsonFile" : "target-server-Debug-0a9c3a4e0dfc5351909f.json",
 					"name" : "server",
-					"projectIndex" : 4
+					"projectIndex" : 5
 				}
 			]
 		}
