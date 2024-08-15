@@ -3,22 +3,17 @@
 #include "mprpcchannel.h"
 #include "monitor.h"
 #include "cpu_load.h"
-// #include"mysql_monitor.h"
 #include <memory>
 #include <thread>
 #include <vector>
 #include <iostream>
 #include <iomanip>
-#define HOST "localhost"
-#define USER "monitor"
-#define PASSWD "123456"
-#define DBHAME "monitor"
+
 
 int main(int argc, char **argv)
 {
     MprpcApplication::Init(argc, argv);
     monitor::proto::RpcManager_Stub stub(new MprpcChannel());
-    // MpRpcContrller contrller;
     ::monitor::proto::machine request;
     monitor::proto::MonitorInfo monitor_info;
     char buf[64] = {0};
@@ -28,8 +23,6 @@ int main(int argc, char **argv)
 
         request.set_name(buf);
         stub.GetMonitorInfo(nullptr, &request, &monitor_info, nullptr);
-        // mysql_monitor mysql(HOST,USER,PASSWD,DBHAME);
-        // mysql.insert(&monitor_info);
         auto cpu_load = monitor_info.mutable_cpu_load();
         std::cout << "user name: " << monitor_info.name() << std::endl;
         // auto net = monitor_info.net_info();

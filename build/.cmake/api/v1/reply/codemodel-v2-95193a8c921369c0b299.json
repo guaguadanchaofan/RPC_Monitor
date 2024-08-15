@@ -1,0 +1,249 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22.1"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"jsonFile" : "directory-src-Debug-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "mysql",
+					"jsonFile" : "directory-mysql-Debug-2aa17f7d03dbe8653342.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "mysql",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "proto",
+					"jsonFile" : "directory-proto-Debug-23359ce0bf7287cdf681.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "proto",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "rpc",
+					"jsonFile" : "directory-rpc-Debug-0baab23a232788aa7dde.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "rpc",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "example",
+					"jsonFile" : "directory-example-Debug-b6fca4a6d0a37c6ae6b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "example",
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LinuxMonitor"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Monitor",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "msqlpool",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "ProtoLib",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "MPRPC",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "Example",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						4,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 5,
+					"id" : "client::@70983d692f648185febe",
+					"jsonFile" : "target-client-Debug-c477a58809e32292bfd2.json",
+					"name" : "client",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "monitor::@145eef247bfb46b6828c",
+					"jsonFile" : "target-monitor-Debug-727cf9f2cf446d1d3ea0.json",
+					"name" : "monitor",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "mprpc::@1745d478b0787f6aa9e6",
+					"jsonFile" : "target-mprpc-Debug-f9628b1079226ff82416.json",
+					"name" : "mprpc",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "mysql::@f65a429cd5ed81adfdd0",
+					"jsonFile" : "target-mysql-Debug-2ec01aff23f26b1f97ed.json",
+					"name" : "mysql",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "online::@70983d692f648185febe",
+					"jsonFile" : "target-online-Debug-0dedfc42dfd45d3336bc.json",
+					"name" : "online",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "proto_lib::@4dcc01eb4302123f3a4a",
+					"jsonFile" : "target-proto_lib-Debug-4f6b5c503d87785a1100.json",
+					"name" : "proto_lib",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "server::@70983d692f648185febe",
+					"jsonFile" : "target-server-Debug-65d856bd86f12a811ba6.json",
+					"name" : "server",
+					"projectIndex" : 5
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/guagua/Desktop/work/RPC_Monitor/build",
+		"source" : "/home/guagua/Desktop/work/RPC_Monitor"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -273,10 +273,10 @@ rpc/CMakeFiles/mprpc.dir/clean:
 # Target rules for target example/CMakeFiles/online.dir
 
 # All Build rule for target.
+example/CMakeFiles/online.dir/all: src/CMakeFiles/monitor.dir/all
 example/CMakeFiles/online.dir/all: mysql/CMakeFiles/mysql.dir/all
 example/CMakeFiles/online.dir/all: proto/CMakeFiles/proto_lib.dir/all
 example/CMakeFiles/online.dir/all: rpc/CMakeFiles/mprpc.dir/all
-example/CMakeFiles/online.dir/all: src/CMakeFiles/monitor.dir/all
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/online.dir/build.make example/CMakeFiles/online.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/online.dir/build.make example/CMakeFiles/online.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guagua/Desktop/work/RPC_Monitor/build/CMakeFiles --progress-num=22,23 "Built target online"
@@ -302,10 +302,10 @@ example/CMakeFiles/online.dir/clean:
 # Target rules for target example/CMakeFiles/server.dir
 
 # All Build rule for target.
+example/CMakeFiles/server.dir/all: src/CMakeFiles/monitor.dir/all
 example/CMakeFiles/server.dir/all: mysql/CMakeFiles/mysql.dir/all
 example/CMakeFiles/server.dir/all: proto/CMakeFiles/proto_lib.dir/all
 example/CMakeFiles/server.dir/all: rpc/CMakeFiles/mprpc.dir/all
-example/CMakeFiles/server.dir/all: src/CMakeFiles/monitor.dir/all
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/server.dir/build.make example/CMakeFiles/server.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/server.dir/build.make example/CMakeFiles/server.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guagua/Desktop/work/RPC_Monitor/build/CMakeFiles --progress-num=31,32 "Built target server"
@@ -331,10 +331,10 @@ example/CMakeFiles/server.dir/clean:
 # Target rules for target example/CMakeFiles/client.dir
 
 # All Build rule for target.
+example/CMakeFiles/client.dir/all: src/CMakeFiles/monitor.dir/all
 example/CMakeFiles/client.dir/all: mysql/CMakeFiles/mysql.dir/all
 example/CMakeFiles/client.dir/all: proto/CMakeFiles/proto_lib.dir/all
 example/CMakeFiles/client.dir/all: rpc/CMakeFiles/mprpc.dir/all
-example/CMakeFiles/client.dir/all: src/CMakeFiles/monitor.dir/all
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/client.dir/build.make example/CMakeFiles/client.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/CMakeFiles/client.dir/build.make example/CMakeFiles/client.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/guagua/Desktop/work/RPC_Monitor/build/CMakeFiles --progress-num=1,2 "Built target client"

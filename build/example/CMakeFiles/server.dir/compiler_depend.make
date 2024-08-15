@@ -369,6 +369,16 @@ example/CMakeFiles/server.dir/server.cc.o: ../example/server.cc \
   ../proto/net_info.pb.h \
   ../include/monitor/monitor.h \
   ../include/monitor/cpu_load.h \
+  ../include/rpc/lockqueue.h \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_queue.h \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
+  /usr/include/c++/11/condition_variable \
   ../include/rpc/rpcprovider.h \
   /usr/local/include/muduo/net/TcpServer.h \
   /usr/local/include/muduo/base/Atomic.h \
@@ -441,16 +451,6 @@ example/CMakeFiles/server.dir/server.cc.o: ../example/server.cc \
   /usr/local/include/muduo/base/CurrentThread.h \
   /usr/local/include/muduo/net/TimerId.h \
   ../include/rpc/logger.h \
-  ../include/rpc/lockqueue.h \
-  /usr/include/c++/11/queue \
-  /usr/include/c++/11/deque \
-  /usr/include/c++/11/bits/stl_deque.h \
-  /usr/include/c++/11/bits/deque.tcc \
-  /usr/include/c++/11/bits/stl_queue.h \
-  /usr/include/c++/11/thread \
-  /usr/include/c++/11/bits/std_thread.h \
-  /usr/include/c++/11/bits/this_thread_sleep.h \
-  /usr/include/c++/11/condition_variable \
   ../include/mysql/ConnectionPool.h \
   ../include/mysql/mysqlconn.h \
   /usr/include/mysql/mysql.h \
@@ -475,8 +475,6 @@ example/CMakeFiles/server.dir/server.cc.o: ../example/server.cc \
 /usr/include/mysql/my_command.h:
 
 /usr/include/mysql/field_types.h:
-
-/usr/include/c++/11/bits/deque.tcc:
 
 /usr/local/include/muduo/net/TimerId.h:
 
@@ -553,6 +551,8 @@ example/CMakeFiles/server.dir/server.cc.o: ../example/server.cc \
 /usr/local/include/muduo/base/noncopyable.h:
 
 /usr/local/include/muduo/net/TcpServer.h:
+
+/usr/include/c++/11/bits/deque.tcc:
 
 ../include/monitor/cpu_load.h:
 
@@ -632,9 +632,9 @@ example/CMakeFiles/server.dir/server.cc.o: ../example/server.cc \
 
 /usr/local/include/google/protobuf/generated_enum_util.h:
 
-/usr/include/c++/11/deque:
-
 /usr/include/boost/config/compiler/gcc.hpp:
+
+/usr/include/c++/11/deque:
 
 /usr/local/include/google/protobuf/map_field_lite.h:
 
